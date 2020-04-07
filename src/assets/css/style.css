@@ -23,7 +23,7 @@ Body copy:		'Poppins', sans-serif; 14px;
 Headers:		'Varela Round', sans-serif;
 
 -------------------------------------------------------------------*/
-@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "ng-select.css";
 /*1. Classes*/
 /********
 --- A ---

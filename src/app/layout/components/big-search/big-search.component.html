@@ -15,7 +15,8 @@
             </div>
         </div>
         <div class="alternative-search-form">
-            <a href="#" class="icon" (click)="this.showAdvancedSearch = !this.showAdvancedSearch"><i class="fa fa-plus"></i>Pencarian Lanjut</a>
+            <a href="#" class="icon" (click)="this.showAdvancedSearch = !this.showAdvancedSearch"><i
+                    class="fa fa-plus"></i>Pencarian Lanjut</a>
             <div *ngIf="this.showAdvancedSearch">
                 <div class="wrapper">
                     <div class="form-row">
@@ -25,38 +26,31 @@
                                     <div class="form-group">
                                         <input name="nomor" type="text" class="form-control small" id="nomor"
                                             placeholder="Nomor Peraturan">
-                            
+
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-3">
                                     <div class="form-group">
                                         <input name="tahun" type="text" class="form-control small" id="tahun"
                                             placeholder="Tahun Peraturan">
-                            
+
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-3">
-                                    <div class="form-group">                                        
-                                        <select 
-                                            data-placeholder="Bentuk Peraturan">
-                                            <option value="">Undang-Undang</option>
-                                            <option value="1">Peraturan Pemerintah</option>
-                                            <option value="2">Peraturan Presiden</option>
-                                            <option value="3">Peraturan Menteri Keuangan</option>
-                                            <option value="4">Peraturan Eselon I</option>
-                                            <option value="5">Surat Edaran</option>
-                                        </select>
+                                    <div class="form-group">
+                                        <ng-select [items]="simpleItems" [(ngModel)]="selectedSimpleItem"
+                                            [ngModelOptions]="{standalone: true}"
+                                            placeholder="Bentuk Peraturan">
+                                        </ng-select>
                                     </div>
 
                                 </div>
                                 <div class="col-md-3 col-sm-3">
                                     <div class="form-group">
-                                        <ng-select [items]="simpleItems"
-                                        class="custom-select"
-                                        [(ngModel)]="selectedSimpleItem"
-                                        [ngModelOptions]="{standalone: true}"
-                                        >
-                                           </ng-select>
+                                        <ng-select [items]="simpleItems" [(ngModel)]="selectedSimpleItem"
+                                            [ngModelOptions]="{standalone: true}"
+                                            placeholder="Jangkauan Peraturan">
+                                        </ng-select>
                                     </div>
                                 </div>
                             </div>
