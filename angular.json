@@ -25,12 +25,18 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/assets/bootstrap/css/bootstrap.css",
+              "src/assets/css/style.css",
+              "src/assets/fonts/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.3.1.min.js",
+              "src/assets/bootstrap/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -59,7 +65,9 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -89,7 +97,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
@@ -123,6 +132,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jdih-ng-fo"
+    }
+  },
+  "defaultProject": "jdih-ng-fo",
+  "cli": {
+    "analytics": "bd022b86-2d0a-444c-b2b7-1cbcb28d2817"
+  }
 }

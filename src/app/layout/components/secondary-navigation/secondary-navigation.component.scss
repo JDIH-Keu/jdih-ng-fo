@@ -1,0 +1,41 @@
+.secondary-navigation {
+    background-color: #02275d;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: table;
+    width: 100%;
+}
+.secondary-navigation a, .secondary-navigation span {
+    color: #fff;
+    padding: .8rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.secondary-navigation a:hover {
+    background-color: rgba(255,255,255,.1);
+}
+.secondary-navigation i {
+    opacity: .5;
+    margin-right: .5rem;
+}
+.secondary-navigation .left {
+    float: left;
+}
+
+.secondary-navigation .left li:first-child {
+    padding-left: 0;
+}
+.secondary-navigation .right {
+    float: right;
+}
+.secondary-navigation .right li {
+    border-left: .1rem solid rgba(255,255,255, .2);
+}
+.secondary-navigation .right li:last-child {
+    border-right: .1rem solid rgba(255,255,255, .2);
+}
+.secondary-navigation ul li {
+    float: left;
+}

@@ -1,0 +1,38 @@
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 2rem;
+    background-color: #01347C;
+}
+
+.footer p, .footer h2{
+    color: #fff !important;
+}
+.footer .brand {
+    margin-bottom: 4rem;
+    display: block;
+}
+.footer nav ul {
+    line-height: 3rem;
+    opacity: .8;
+}
+.footer address {
+    opacity: .8;
+}
+
+@media (max-width: 767px) {
+    .footer p, .footer h2{
+       text-align: center;
+    }
+
+    .footer{
+        padding-top: 4rem;
+    }
+
+    .footer .brand {
+        display: none;
+    }
+
+}

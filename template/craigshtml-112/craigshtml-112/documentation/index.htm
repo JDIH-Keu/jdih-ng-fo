@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+	
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Craigs HTML Template Documentation</title>
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+
+	<script src="assets/jquery-2.js"></script>
+	<script type="text/javascript">
+		jQuery(window).load(function() {
+			jQuery('#main-nav').on("click", "li a", function() { 
+				if (jQuery(this).siblings('.submenu').length > 0) { 
+					var thisEl = jQuery(this).siblings('.submenu');
+					jQuery('#main-nav .submenu').not(thisEl).slideUp(300);  
+					jQuery(this).siblings('.submenu').slideToggle(300);  
+					return false;
+				}
+			});
+			
+		});
+	</script>
+</head>
+
+<body>
+<div id="page-wrapper">
+	<header>
+    	<div class="header-inner clearfix">
+        
+        	<div id="logo"><img src="assets/logo-inverted.png" alt="Craigs Logo"></div>
+            
+            <div id="menu">
+            	<nav id="main-nav">
+					<ul>
+                    	<li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#html-structure">HTML Stucture</a>
+                        </li>
+                        <li>
+                            <a href="#list-grid-masonry-listing">List, Grid and Masonry Listing</a>
+                        </li>
+                        <li>
+                            <a href="#background-class">Background Class</a>
+                        </li>
+                        <li>
+                            <a href="#hero-image-background">Hero Image Background</a>
+                        </li>
+                        <li>
+                            <a href="#google-maps-api-key">Google Maps API Key</a>
+                        </li>
+                        <li>
+                            <a href="#hero-map">Hero Map</a>
+                        </li>
+                        <li>
+                            <a href="#google-map">Google Map</a>
+                        </li>
+                        <li>
+                            <a href="#css">CSS</a>
+                        </li>
+                        <li>
+                            <a href="#forms">Forms</a>
+                        </li>
+                    </ul>
+            	</nav>
+            </div>
+        	
+        </div>
+    </header>
+    
+    <div id="page-body">
+    
+        <div id="page-hero">
+            <h1><strong>Craigs</strong> Documentation</h1>
+            <h4 class="subtitle">HTML Template</h4>
+        </div>
+
+        <section id="about">
+            <div class="section-inner wrapper">
+                <h3 class="section-title"><strong>About</strong></h3>
+                <p>
+                    This is a documentation for Craigs HTML template. It means that it is a static HTML template and it's <strong>not</strong> compatible with WordPress.
+                    You need to have some basic knowledge about HTML, CSS and JavaScript language.
+                </p>
+            </div>
+        </section>
+    
+    	<section id="localhost">
+        	<div class="section-inner wrapper">
+                <h3 class="section-title"><strong>Use Localhost and API Key!</strong></h3>
+                <p style="border: 4px solid red; padding: 30px;">
+                    In order to run this template with Google Maps properly, you need to use Localhost, for example <a href="https://www.apachefriends.org/index.html">XAMPP</a>
+                    and you need to obtain a <a href="#google-maps-api-key">Google Maps API Key</a>
+                </p>
+            </div>        	
+        </section>
+
+        <section id="html-structure">
+        	<div class="section-inner wrapper">
+                <h3 class="section-title"><strong>Basic HTML structure</strong></h3>
+
+<pre>&lt;!doctype html&gt;
+&lt;html lang="en-US"&gt;
+&lt;head&gt;
+
+ <span>&lt;!-- CSS, Fonts, Title --&gt;</span>
+ ...
+
+&lt;/head&gt;
+
+&lt;body&gt;
+    <span>&lt;!-- MAIN PAGE WRAPPER --&gt;</span>
+    &lt;div class="page"&gt;
+
+        <span>&lt;!-- HEADER & HERO --&gt;</span>
+        &lt;header class="hero"&gt;&lt;/header&gt;
+
+        <span>&lt;!-- MAIN CONTENT --&gt;</span>
+        &lt;section class="content"&gt;&lt;/section&gt;
+
+        <span>&lt;!-- FOOTER --&gt;</span>
+        &lt;footer class="footer"&gt;&lt;/footer&gt;
+
+    &lt;/div&gt;
+
+  <span>&lt;!-- Javascripts --&gt;</span>
+  ...
+ 
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+            </div>        	
+        </section>
+
+        <section id="list-grid-masonry-listing">
+            <div class="section-inner wrapper">
+
+                <h3 class="section-title"><strong>List, Grid & Masonry Listing</strong></h3>
+
+                <h4>Default Size</h4>
+
+                <p>
+                   Items (Ads) can be displayed in three different styles: grid, listing or masonry
+                </p>
+
+                <div class="column-section clearfix">
+                    <div class="column one-third">
+                        <code>.grid</code>
+                        <p>Items will be displayed as a grid</p>
+                    </div>
+
+                    <div class="column two-third last-col">
+                    	<pre>&lt;div class="items <span>grid</span>"&gt; ... &lt;/div&gt;</pre>
+                    </div>
+                </div>
+
+                <div class="column-section clearfix">
+                    <div class="column one-third">
+                        <code>.list</code>
+                        <p>Items will be displayed as list.</p>
+                    </div>
+
+                    <div class="column two-third last-col">
+                        <pre>&lt;div class="items <span>list</span>"&gt; ... &lt;/div&gt;</pre>
+                    </div>
+                </div>
+
+                <div class="column-section clearfix">
+                    <div class="column one-third">
+                        <code>.masonry</code>
+                        <p>Items will be displayed as masonry.</p>
+                    </div>
+
+                    <div class="column two-third last-col">
+                        <pre>&lt;div class="items <span>masonry</span>"&gt; ... &lt;/div&gt;</pre>
+                    </div>
+                </div>
+
+                <h4>Compact Size</h4>
+
+                <div class="column-section clearfix">
+                    <div class="column one-third">
+                        <code>.grid .compact</code>
+                        <p>Items will be displayed as a compact grid</p>
+                    </div>
+
+                    <div class="column two-third last-col">
+                        <pre>&lt;div class="items <span>grid compact</span>"&gt; ... &lt;/div&gt;</pre>
+                    </div>
+                </div>
+
+                <div class="column-section clearfix">
+                    <div class="column one-third">
+                        <code>.list .compact</code>
+                        <p>Items will be displayed as a compact list.</p>
+                    </div>
+
+                    <div class="column two-third last-col">
+                        <pre>&lt;div class="items <span>list compact</span>"&gt; ... &lt;/div&gt;</pre>
+                    </div>
+                </div>
+
+                <p><span class="tip-note">Note</span>Masonry listing has no "compact" option</p>
+
+                <br>
+
+                <h4>Responsive Grid Listing Settings</h4>
+
+                <p>
+                    You can set how the grid list will be displayed on different screen resolutions using these classes:
+                </p>
+
+                <h5>XL resolution</h5>
+
+                <code>.grid-xl-4-items</code>
+                <code>.grid-xl-3-items</code>
+                <code>.grid-xl-2-items</code>
+
+                <h5>LG resolution</h5>
+
+                <code>.grid-lg-4-items</code>
+                <code>.grid-lg-3-items</code>
+                <code>.grid-lg-2-items</code>
+
+                <h5>MD resolution</h5>
+
+                <code>.grid-md-4-items</code>
+                <code>.grid-md-3-items</code>
+                <code>.grid-md-2-items</code>
+
+                <h5>XS Resolution (mobile)</h5>
+
+                <p>grid will have always 100% width.</p>
+
+                <h4>Example</h4>
+                <p>In this example, items will be displayed as 4 in XL resolution, 3 in LG resolution and 2 in MD resolution.</p>
+<pre>
+    &lt;div class="items grid <span>grid-xl-4-items grid-lg-4-items grid-md-4-items</span>"&gt;&lt;/div&gt;
+</pre>
+            </div>
+        </section>
+
+        <section id="background-class">
+            <div class="section-inner wrapper">
+                <h3 class="section-title"><strong>Background Class</strong></h3>
+                <p>
+                    You can set a background image or color for <code>.block</code>, <code>.hero-wrapper</code> or any other relative positioned element.
+                </p>
+
+                <h4>Background Color</h4>
+                <p>
+                    Use <code>data-background-color</code> attribute for color.
+                </p>
+<pre>
+&lt;section class="<span>block</span>"&gt;
+    ...
+    &lt;div class="<span>background</span>" <span>data-background-color="#fff"</span>&gt;&lt;/div&gt;
+&lt;/section&gt;
+</pre>
+                <h4>Background Image</h4>
+<pre>
+&lt;section class="<span>block</span>"&gt;
+    ...
+    &lt;div class="<span>background</span>"&gt;
+        &lt;div class="<span>background-image</span>"&gt;
+            &lt;img src="<span>assets/img/background-image.jpg</span>" alt=""&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</pre>
+                <p>
+                    <span class="tip-important">Important:</span> If your background image is dark, use <code>has-dark-background</code> class
+                </p>
+            </div>
+        </section>
+
+        <section id="hero-image-background">
+            <div class="section-inner wrapper">
+                <h3 class="section-title"><strong>Hero Image Background</strong></h3>
+                <p>
+                    Here is an example of using <code>.background-image</code> class for Hero header.
+                </p>
+<pre>
+&lt;header class="hero <span>has-dark-background</span>"&gt;
+        &lt;div class="hero-wrapper"&gt;
+            ...
+            &lt;div class="<span>background</span>"&gt;
+                &lt;div class="<span>background-image</span>"&gt;
+                    &lt;img src="<span>assets/img/hero-background-image.jpg</span>" alt=""&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+            </div>
+        </section>
+
+        <section id="google-maps-api-key">
+            <div class="section-inner wrapper">
+                <h3 class="section-title"><strong>Google Maps API Key</strong></h3>
+                <p>
+                    A first step if you want to use Google Maps is to get an API key from <a href="
+https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key">this link.</a>. Otherwise you'll get grey map and
+                    <strong>Oops! Something went wrong.</strong> message.
+                </p>
+
+                <p>Then on every page where with the map find this code at the bottom of the page:</p>
+<pre>
+    &lt;script type="text/javascript" src="<span>http://maps.google.com/maps/api/js?key=<strong>YOUR_API_KEY</strong>&libraries=places</span>"&gt;&lt;/script&gt;
+</pre>
+                <p>
+                    Where replace text <strong>YOUR_API_KEY</strong> with your own API you've get.
+                </p>
+            </div>
+        </section>
+
+        <section id="hero-map">
+            <div class="section-inner wrapper">
+                <h3 class="section-title"><strong>Hero Map & Database</strong></h3>
+                <p>
+                    Hero Google map in <code>index-3.html</code> page uses external MySQL database.
+                </p>
+<pre>
+&lt;script&gt;
+    var latitude = 40.7344458;
+        var longitude = -73.86704922;
+        var mapElement = "map-homepage";
+        var mapDefaultZoom = 13;
+        var mapAutoZoom = false;
+    heroMap(latitude,longitude, mapElement, mapDefaultZoom, mapAutoZoom);
+&lt;/script&gt;
+</pre>
+                <p>
+                    Where <code>latitude</code> and <code>longitude</code> represents a center of the map.
+                    <br>
+                    <code>mapAutoZoom</code> enables or disables auto zooming on all visible markers.
+                </p>
+                <h4>Database</h4>
+                <p>
+                    You need to run this template on some Localhost server. For example <a href="https://www.apachefriends.org/index.html">XAMPP</a>.
+                    Example databse is located ad <code>assets/example_database</code>.
+                </p>
+                <p>
+                    To change the database login credentials and name, find the <code>assets/php/data.php</code> file,
+                    where you can change:
+                </p>
+<pre>
+$serverName = "localhost";
+$username = "root";
+$password = "";
+$databaseName = "craigs_database";
+</pre>
+            </div>
+        </section>
+
+        <section id="google-map">
+            <div class="section-inner wrapper">
+                <h3 class="section-title"><strong>Google Map</strong></h3>
+                <p>
+                    To display Google map you need to create an element with the <code>map</code> class and with <strong>unique ID</strong> and
+                    <code>.height-***px</code> class for defining a height of the map. <a href="#css">Read more here</a> about height CSS class.
+                </p>
+<pre>
+&lt;div class="<span>map height-300px</span>" id="<span>your-map-id</span>"&gt;&lt;/div&gt;
+</pre>
+                <p>
+                    Then at the bottom of the page after <code>&lt;script&gt;</code> list enter this code:
+                </p>
+<pre>
+&lt;script&gt;
+    var latitude = 51.511971;
+    var longitude = -0.137597;
+    var markerImage = "assets/img/map-marker.png";
+    var mapTheme = "light";
+    var mapElement = "<span>your-map-id</span>";
+    simpleMap(latitude, longitude, markerImage, mapTheme, mapElement);
+&lt;/script&gt;
+</pre>
+                <p>
+                    <span class="tip-note">Note</span> Map can have <strong>light</strong> and <strong>dark</strong> theme.
+                    If you use <strong>dark</strong> theme, use also <code>markerImage = "assets/img/map-marker-w.png";</code>
+                </p>
+            </div>
+        </section>
+
+        <section id="css">
+            <div class="section-inner wrapper">
+                <h3 class="section-title"><strong>CSS</strong></h3>
+                <p><code>.has-dark-background</code> use when you have element with a dark <a href="#background-class">background</a>.</p>
+                <p><code>.block</code> gives an element padding top and padding bottom</p>
+                <p><code>.box</code> gives an element padding, white background and shadow</p>
+                <p><code>.center</code> centers a text or an inline element</p>
+                <p><code>.no-shadow</code> disables shadow on element</p>
+                <p><code>.height-100px</code> give element 100px height</p>
+                <p><code>.height-150px</code></p>
+                <p><code>.height-200px</code></p>
+                <p><code>.height-250px</code></p>
+                <p><code>.height-300px</code></p>
+                <p><code>.height-350px</code></p>
+                <p><code>.height-400px</code></p>
+                <p><code>.height-450px</code></p>
+                <p><code>.height-500px</code></p>
+                <p><code>.opacity-5</code> opacity 0.05</p>
+                <p><code>.opacity-10</code> opacity 0.1</p>
+                <p><code>.opacity-20</code></p>
+                <p><code>.opacity-30</code></p>
+                <p><code>.opacity-40</code></p>
+                <p><code>.opacity-50</code> opacity 0.5</p>
+                <p><code>.opacity-60</code></p>
+                <p><code>.opacity-70</code></p>
+                <p><code>.opacity-80</code></p>
+                <p><code>.opacity-90</code> opacity 0.9</p>
+                <p><code>.text-align-right</code></p>
+                <p><code>.text-align-left</code></p>
+                <p><code>columns-4</code> set 4 columns dor <code>ul, ol, dd</code> elements</p>
+                <p><code>columns-3</code> set 3 columns dor <code>ul, ol, dd</code> elements</p>
+                <p><code>columns-2</code> set 2 columns dor <code>ul, ol, dd</code> elements</p>
+            </div>
+        </section>
+
+        <section id="forms">
+            <div class="section-inner wrapper">
+                <h3 class="section-title"><strong>Forms</strong></h3>
+                <h4>Submit Form</h4>
+                <p>
+                    When you open source code of <code>submit.html</code> and find a <code>.form-submit</code> form,
+                    you can see several <code>.form-slide</code> elements in <code>.from-slides#category-tabs</code>.
+                    This slides with different inputs for each category are dynamically changed when user changes the
+                    <code>.change-tab</code> <code>&lt;select&gt;</code> element. Only input data from active tab
+                    are sent through form. Other inputs are disabled.
+                </p>
+                <p>
+                    There also two hidden inputs:
+                </p>
+                <ul>
+                    <li><code>#latitude</code></li>
+                    <li><code>#longitude</code></li>
+                </ul>
+                <p>Which are passed in case you need these data in the databse.</p>
+
+                <h4>Email Form</h4>
+                <p>
+                    First of all, you need to edit your incoming email address. Open <code>assets/php/email.php</code> and change this email address:
+                </p>
+<pre>
+$to = '<span>hello@example.com</span>';
+</pre>
+                <p>
+                    Email forms needs to have <code>.email</code> class:
+                </p>
+<pre>
+&lt;form class="form <span>email</span>"&gt;&lt;/form&gt;
+</pre>
+                <p>
+                    Then these variables are passed to PHP file located at <code>assets/php/email.php</code>:
+                </p>
+                <p>
+                    <code>$_POST['name']</code>
+                    <br>
+                    <code>$_POST['subject']</code>
+                    <br>
+                    <code>$_POST['email']</code>
+                    <br>
+                    <code>$_POST['phone']</code>
+                    <br>
+                    <code>$_POST['message']</code>
+                </p>
+                <p>
+                    These are default, but you can add your own. For example we want two new inputs for the Newsletter.
+                    You can check this in the <code>index-2.html</code> when you find <strong>Get the Latest Ads in Your Inbox</strong>.
+                    Here is the <code>select</code> and <code>input</code> field which we want to collect. We have named them:
+                </p>
+<pre>
+&lt;select name="<span>newsletter_category</span>"&gt; ... &lt;/select&gt;
+</pre>
+<pre>
+&lt;input name="<span>newsletter_email</span>" type="email"&gt;
+</pre>
+                <p>
+                    Now open <code>assets/php/email.php</code> and check the code:
+                </p>
+<pre>
+if( isset($_POST['<span>newsletter_category</span>']) ){
+    $subject = 'Newsletter subscriber from Craigs';
+    $category = $_POST['<span>newsletter_category</span>'];
+
+    $body .= "";
+    $body .= "Category: ";
+    $body .= $category;
+    $body .= "\n\n";
+}
+if( isset($_POST['<span>newsletter_email</span>']) ){
+    $email = $_POST['<span>newsletter_email</span>'];
+
+    $body .= "";
+    $body .= "Email: ";
+    $body .= $email;
+    $body .= "\n\n";
+}
+</pre>
+                <p>
+                    Variables <code>newsletter_category</code> and <code>newsletter_email</code> are passed via $_POST and sent to your email address.
+                </p>
+                <h4>Enable Search in Select element</h4>
+                <p>
+                    The template uses <a href="https://selectize.github.io/selectize.js/">Selectize.js</a> plugin for styling <code>select</code> HTMl elements.
+                    You can enable searching through the select options by adding <code>data-enable-search="true"</code> to your <code>&lt;select&gt;</code>.
+                </p>
+                <p class="alert-note">Prior to v 1.0.3</p>
+                <p>In the earlier version of the template, there was <code>data-disable-search="true"</code> used. Now disabled search in <code>select</code>
+                elements is by default.</p>
+            </div>
+        </section>
+    
+    </div>
+
+</div><!-- #page -->    
+
+</body></html>
