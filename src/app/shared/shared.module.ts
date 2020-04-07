@@ -15,6 +15,7 @@ import { MainNavigationComponent } from './components/main-navigation/main-navig
 import { SecondaryNavigationComponent } from './components/secondary-navigation/secondary-navigation.component';
 import { BigSearchComponent } from './components/big-search/big-search.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     BigSearchComponent,
     TematikComponent,
     GridItemsComponent,
-    FilterPipe
+    FilterPipe,
+    PaginationComponent
   ],
   exports: [
     HeaderComponent,

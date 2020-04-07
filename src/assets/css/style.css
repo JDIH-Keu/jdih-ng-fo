@@ -219,67 +219,6 @@
 --- C ---
 ********/
 
-.comments .comment {
-    margin-bottom: 3rem;
-}
-.comments .comment .author .author-description {
-    margin-left: 10rem;
-    border-bottom: .1rem solid rgba(0,0,0,.1);
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-}
-.comments .comment .author .author-description h3, .comments .comment .author .author-description h4 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 1rem;
-}
-.comments .comment .author .author-description h5 {
-    font-weight: 600;
-    display: inline-block;
-}
-.comments .comment .author .author-description h5 a {
-    display: inline-block;
-}
-.comments .comment .author .author-description .meta {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-}
-.comments .comment .author .author-description .meta span {
-    margin-right: 1rem;
-}
-.comments .comment .author .author-description .meta span:not(.rating) {
-    opacity: .5;
-}
-.comments .comment .author .author-image {
-    box-shadow: 0 0.2rem .7rem 0 rgba(0,0,0, .08);
-}
-.comments.masonry .comment .author {
-    background-color: #fff;
-    box-shadow: 0 .1rem 2rem rgba(0,0,0,.15);
-    border-radius: .4rem;
-    padding: 3rem;
-}
-.comments.masonry .comment .author-description {
-    margin-left: 0;
-    padding-top: 0;
-    border-bottom: none;
-}
-.comments.masonry .comment .author-description h3 {
-    position: inherit;
-    color: inherit;
-}
-.comments.masonry .comment .author-description .meta {
-    background-color: transparent;
-    padding: 0;
-}
-.comments.masonry .comment .author-description .meta:before {
-    display: none;
-}
-.comments.masonry .comment h5 {
-    line-height: 6rem;
-    margin-left: 8rem;
-}
 /********
 --- E ---
 ********/
@@ -2399,6 +2338,9 @@ textarea.form-control {
     }
     h2 {
         font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
     }
     .d-xs-grid {
         display: grid !important;
@@ -2409,6 +2351,11 @@ textarea.form-control {
     .block section {
         margin-bottom: 4rem;
     }
+
+    .block {
+        padding-top: 1rem;
+    }
+
     .d-xs-none {
         display: none !important;
     }
@@ -2416,7 +2363,7 @@ textarea.form-control {
         top: 3rem !important;
         bottom: auto !important;
     }
-    .author {}
+
     .author.big {
         padding-top: 28rem;
         position: relative;

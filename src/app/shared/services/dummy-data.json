@@ -1,4 +1,48 @@
 {
+    "FeedbackExample": [
+        {
+            "GuestBookID": 34725,
+            "Name": "Suraman",
+            "CateWrite": "Pertanyaan",
+            "Email": "jatimulyo80@gmail.com",
+            "Subject": "Pinjaman",
+            "Content": "Bagaimana soal pinjaman di bank.. akibat dampak firus \r\ncorona...  apa tindakan bagi pemerintah. Untuk menggapi. Dan \r\nbagimana sangsi untuk pihak bank yg masih ngotot minta \r\nansuran. Perbulanya... terimakasih.",
+            "DateWrite": "Kamis, 26-Maret-2020",
+            "Visible": true,
+            "Answer": "Terkait hal tersebut, Otoritas Jasa Keuangan (OJK) sbg \r\nregulator jasa keuangan membuat aturan teknis melalui POJK \r\nNo. 11/POJK.03/2020 tentang Stimulus Perekonomian Nasional \r\nsebagai Kebijakan countercyclical.\r\nSaudara dapat menghubungi Unit Teknis terkait di OJK untuk \r\ninformasi lebih lengkap",
+            "DateAnswer": "2020-03-27T00:00:00",
+            "CdLang": "1",
+            "UserID": 0
+        },
+        {
+            "GuestBookID": 34724,
+            "Name": "anwar harijana",
+            "CateWrite": "Pertanyaan",
+            "Email": "halikentik@gmail.com",
+            "Subject": "pengalihan tugas kpa",
+            "Content": "mohon info regulasi yang mengatur tentang pengalihan tugas \r\nkuasa pengguna anggaran kepada pejabat setingkat di \r\nbawahnya, terima kasih",
+            "DateWrite": "Selasa, 17-Maret-2020",
+            "Visible": true,
+            "Answer": "Silakan menghubungi Unit teknis pada Direktorat Jenderal \r\nAnggaran untuk informasi dimaksud",
+            "DateAnswer": "2020-03-27T00:00:00",
+            "CdLang": "1",
+            "UserID": 0
+        },
+        {
+            "GuestBookID": 34723,
+            "Name": "RIVOL HANS SALINDEHO",
+            "CateWrite": "Pertanyaan",
+            "Email": "jifricharly@gmail.com",
+            "Subject": "pertanyaan",
+            "Content": "maksud saya NOMOR 113/PMK.05/2012.",
+            "DateWrite": "Senin, 16-Maret-2020",
+            "Visible": true,
+            "Answer": "Dalam Pasal 3 PMK 113/PMK.05/2012 dimaksud mengatur tentang \r\nprinsip perjalanan dinas",
+            "DateAnswer": "2020-03-27T00:00:00",
+            "CdLang": "1",
+            "UserID": 0
+        }
+    ],
     "defaultPeraturan": [
         {
             "Id": 1,
@@ -124,7 +168,7 @@
     "defaultMenu": [
         {
             "Link": "#",
-            "Name": "Informasi Hukum",
+            "Name": "Dokumen Hukum",
             "ParentId": -1,
             "Type": "",
             "Order": 0,
@@ -226,8 +270,17 @@
             "Id": 0,
             "Items": [
                 {
-                    "Link": "tentang",
+                    "Link": "pages/tentang",
                     "Name": "Tentang JDIH",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "pages/jdihn",
+                    "Name": "Anggota JDIHN",
                     "ParentId": -1,
                     "Type": "",
                     "Order": 0,
@@ -253,7 +306,7 @@
                     "Id": 0
                 },
                 {
-                    "Link": "page/disclaimer",
+                    "Link": "pages/disclaimer",
                     "Name": "Disclaimer",
                     "ParentId": -1,
                     "Type": "",
@@ -352,4 +405,5 @@
             "ModifiedDate": "2019-03-13T00:00:00"
         }
     ]
+
 }

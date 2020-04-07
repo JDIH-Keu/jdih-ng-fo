@@ -45,7 +45,7 @@ const routes: Routes = [
   },
   {
     path: 'feedback',
-    data: { title: 'Masukan/Saran' },
+    data: { title: 'Pertanyaan/Masukan' },
     loadChildren: () => import('./main/feedback/feedback.module').then(m => m.FeedbackModule)
   }
 ];

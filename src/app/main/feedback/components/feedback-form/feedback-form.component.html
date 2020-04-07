@@ -1,0 +1,26 @@
+<h2>Form Pertanyaan/Masukan</h2>
+<form class="form email" novalidate="novalidate">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="name" class="col-form-label required">Nama</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Nama" required="">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="email" class="col-form-label required">Email</label>
+                <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="subject" class="col-form-label">Subject</label>
+        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject">
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-form-label required">Pesan</label>
+        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Your Message" required=""></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary float-right">Kirim Pesan</button>
+</form>
