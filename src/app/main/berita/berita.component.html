@@ -1,1 +1,85 @@
-<p>berita works!</p>
+<section class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <router-outlet></router-outlet>
+            </div>
+
+            <div class="col-md-3">
+                <aside class="sidebar">
+                    <section>
+                        <h2>Cari Berita</h2>
+                        <!--============ Side Bar Search Form ===========================================-->
+                        <form class="sidebar-form form" novalidate="novalidate">
+                            <div class="form-group">
+                                <input name="keyword" type="text" class="form-control" id="what" placeholder="Enter keyword and press enter">
+                            </div>
+                            <!--end form-group-->
+                        </form>
+                        <!--============ End Side Bar Search Form =======================================-->
+                    </section>
+                    <section>
+                        <h2>Berita Populer</h2>
+                        <div class="sidebar-post">
+                            <a href="blog-post.html" class="background-image" style="background-image: url(&quot;assets/img/blog-image-03.jpg&quot;);">
+                                <img src="assets/img/blog-image-03.jpg">
+                            </a>
+                            <!--end background-image-->
+                            <div class="description">
+                                <h4>
+                                    <a href="blog-post.html">How to build a cool swimming pool</a>
+                                </h4>
+                                <div class="meta">
+                                    <a href="#">John Doe</a>
+                                    <figure>02.05.2017</figure>
+                                </div>
+                                <!--end meta-->
+                            </div>
+                            <!--end description-->
+                        </div>
+                        <!--end sidebar-post-->
+
+                        <div class="sidebar-post">
+                            <a href="blog-post.html" class="background-image" style="background-image: url(&quot;assets/img/blog-image-04.jpg&quot;);">
+                                <img src="assets/img/blog-image-04.jpg">
+                            </a>
+                            <!--end background-image-->
+                            <div class="description">
+                                <h4>
+                                    <a href="blog-post.html">Concrete decorations can be beautiful</a>
+                                </h4>
+                                <div class="meta">
+                                    <a href="#">John Doe</a>
+                                    <figure>02.05.2017</figure>
+                                </div>
+                                <!--end meta-->
+                            </div>
+                            <!--end description-->
+                        </div>
+                        <!--end sidebar-post-->
+
+                        <div class="sidebar-post">
+                            <a href="blog-post.html" class="background-image" style="background-image: url(&quot;assets/img/blog-image-05.jpg&quot;);">
+                                <img src="assets/img/blog-image-05.jpg">
+                            </a>
+                            <!--end background-image-->
+                            <div class="description">
+                                <h4>
+                                    <a href="blog-post.html">Let’s take a break</a>
+                                </h4>
+                                <div class="meta">
+                                    <a href="#">John Doe</a>
+                                    <figure>02.05.2017</figure>
+                                </div>
+                                <!--end meta-->
+                            </div>
+                            <!--end description-->
+                        </div>
+                        <!--end sidebar-post-->
+
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
