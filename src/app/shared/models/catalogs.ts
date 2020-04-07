@@ -34,10 +34,10 @@ export class Peraturan {
   FullTextPDF?: string;
   AbstarkMedia?: Media;
   AbstrakPDF?: string;
-  CreatedBy?: string
-  CreatedDate?: Date
-  ModifiedBy?: string
-  ModifiedDate?: Date
+  CreatedBy?: string;
+  CreatedDate?: Date;
+  ModifiedBy?: string;
+  ModifiedDate?: Date;
 }
 
 export class Putusan {
@@ -51,8 +51,8 @@ export class Putusan {
   SubjekPutusan?: string;
   RefBidangHukumId?: number;
   TanggalPengundangan?: Date;
-  Penerbit?: string
-  TempatTerbit?: string
+  Penerbit?: string;
+  TempatTerbit?: string;
   Sumber?: string;
   Bahasa?: string;
   Lokasi?: string;
@@ -64,62 +64,62 @@ export class Putusan {
   ScopePublikasi?: string;
   FullTextMedia?: Media;
   FullTextPDF?: string;
-  CreatedBy?: string
-  CreatedDate?: Date
-  ModifiedBy?: string
-  ModifiedDate?: Date
+  CreatedBy?: string;
+  CreatedDate?: Date;
+  ModifiedBy?: string;
+  ModifiedDate?: Date;
 }
 
 export class Artikel {
-  ArtikelId?: string
-  Judul?: string
-  EdisiCetakan?: string
-  Penerbit?: string
-  TempatTerbit?: string
-  Sumber?: string
-  TanggalTerbit?: Date
-  TajukArtikel?: number
-  BentukArtikel?: number
-  SubjekArtikelJson?: RefSubyek[]
-  SubjekArtikel?: string
-  RefBidangHukumId?: number
-  Bahasa?: string
-  Lokasi?: string
-  Status?: string
-  Role?: string
-  LampiranMedia?: Media
-  Lampiran?: string
-  ScopePublikasi?: string
-  CreatedBy?: string
-  CreatedDate?: Date
-  ModifiedBy?: string
-  ModifiedDate?: Date
+  ArtikelId?: string;
+  Judul?: string;
+  EdisiCetakan?: string;
+  Penerbit?: string;
+  TempatTerbit?: string;
+  Sumber?: string;
+  TanggalTerbit?: Date;
+  TajukArtikel?: number;
+  BentukArtikel?: number;
+  SubjekArtikelJson?: RefSubyek[];
+  SubjekArtikel?: string;
+  RefBidangHukumId?: number;
+  Bahasa?: string;
+  Lokasi?: string;
+  Status?: string;
+  Role?: string;
+  LampiranMedia?: Media;
+  Lampiran?: string;
+  ScopePublikasi?: string;
+  CreatedBy?: string;
+  CreatedDate?: Date;
+  ModifiedBy?: string;
+  ModifiedDate?: Date;
 }
 
 export class Monografi {
-  MonografiHukumId?: string
-  Judul?: string
-  NomorPanggil?: string
-  EdisiCetakan?: string
-  Penerbit?: string
-  TempatTerbit?: string
-  DeskripsiFisik?: string
-  ISBN?: string
-  NomorIndukBuku?: string
-  TanggalTerbit?: Date
-  TajutHukum?: number
-  SubjekHukumJson?: RefSubyek[]
-  SubjekHukum?: string
-  RefBidangHukumId?: number
-  Bahasa?: string
-  Lokasi?: string
-  Status?: string
-  Role?: string
-  LampiranMedia?: Media
-  Lampiran?: string
-  ScopePublikasi?: string
-  CreatedBy?: string
-  CreatedDate?: Date
-  ModifiedBy?: string
-  ModifiedDate?: Date
+  MonografiHukumId?: string;
+  Judul?: string;
+  NomorPanggil?: string;
+  EdisiCetakan?: string;
+  Penerbit?: string;
+  TempatTerbit?: string;
+  DeskripsiFisik?: string;
+  ISBN?: string;
+  NomorIndukBuku?: string;
+  TanggalTerbit?: Date;
+  TajutHukum?: number;
+  SubjekHukumJson?: RefSubyek[];
+  SubjekHukum?: string;
+  RefBidangHukumId?: number;
+  Bahasa?: string;
+  Lokasi?: string;
+  Status?: string;
+  Role?: string;
+  LampiranMedia?: Media;
+  Lampiran?: string;
+  ScopePublikasi?: string;
+  CreatedBy?: string;
+  CreatedDate?: Date;
+  ModifiedBy?: string;
+  ModifiedDate?: Date;
 }
