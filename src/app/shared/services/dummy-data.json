@@ -286,5 +286,70 @@
             "Judul": "Insentif Pajak untuk Wajib Pajak Terdampak Wabah Virus Corona",
             "Tanggal": "21 Maret 2020"
         }
+    ],
+    "FAQExample": [
+        {
+            "FAQID": 10,
+            "Question": "Bagaimana jika file produk hukum yang saya inginkan tidak ada?",
+            "Answer": "Silahkan meninggalkan pesan/komentar melalui menu Hubungi Kami atau dapat menghubungi kami melalui kontak yang kami sediakan. Jangan lupa untuk menginformasikan alamat email Anda yang valid agar kami bisa menghubungi anda.",
+            "UserID": 16,
+            "ModifiedDate": "2018-07-09T00:00:00"
+        },
+        {
+            "FAQID": 11,
+            "Question": "Pelayanan apa saja yang disediakan JDIH Kementerian Keuangan untuk umum?",
+            "Answer": "JDIH memberikan pelayanan kepada masyarakat umum diataranya adalah penyediaan koleksi regulasi yang ada dapat dibaca dan/atau disalin dan buku-buku bertemakan hukum.",
+            "UserID": 16,
+            "ModifiedDate": "2018-07-09T00:00:00"
+        },
+        {
+            "FAQID": 13,
+            "Question": "Bagaimana cara menyampaikan saran-saran atau kritik untuk website ini?",
+            "Answer": "Anda dapat menyampaikan kritik atau saran untuk website JDIH Kementerian Keuangan melalui menu Hubungi Kami.",
+            "UserID": 16,
+            "ModifiedDate": "2018-07-09T00:00:00"
+        },
+        {
+            "FAQID": 14,
+            "Question": "Mengapa Keputusan Menteri Keuangan tidak lengkap di website ini?",
+            "Answer": "Sebagian besar Keputusan Menteri Keuangan merupakan produk hukum yang bersifat menetapkan (beschikking) dan hanya disampaikan kepada para penerima salinan yang tercantum dalam Keputusan Menteri Keuangan tersebut",
+            "UserID": 16,
+            "ModifiedDate": "2018-07-09T00:00:00"
+        },
+        {
+            "FAQID": 7,
+            "Question": "Bagaimana mencari produk hukum yang saya inginkan?",
+            "Answer": "Untuk mencari produk hukum yang Anda inginkan, Anda dapat measukkan kata kunci seperti judul atau nomor atau tahun peraturan yang anda ketahui pada tab pencarian, kemudian klik tombol cari.",
+            "UserID": 16,
+            "ModifiedDate": "2018-07-09T00:00:00"
+        },
+        {
+            "FAQID": 8,
+            "Question": "Bagaimana cara mendownload file produk hukum?",
+            "Answer": "Untuk mengunduh peraturan, Anda dapat melakukanya melalui link &#8216;Unduh&#8217; yang terletak dibawah deskripsi peraturan",
+            "UserID": 16,
+            "ModifiedDate": "2018-07-09T00:00:00"
+        },
+        {
+            "FAQID": 15,
+            "Question": "Apakah yang dimaksud dengan BN, LN, TLN dan LL pada Katalog Peraturan?",
+            "Answer": "Kode-kode tersebut munjukan kode dari sumber peraturan tersebut, BN adalah Berita Negara, LN adalah Lembaran Negara, TLN adalah Tambahan Lembaran Negara, dan LL adalah Lembaran Lepas.",
+            "UserID": 16,
+            "ModifiedDate": "2018-07-09T00:00:00"
+        },
+        {
+            "FAQID": 16,
+            "Question": "Apakah konten yang tersedia di website ini sama dengan yang ada di aplikasi JDIH Mobile?",
+            "Answer": "Ya,konten yang tersedia di website ini sama dengan yang ada di aplikasi JDIH Mobile.",
+            "UserID": 15,
+            "ModifiedDate": "2019-03-13T00:00:00"
+        },
+        {
+            "FAQID": 17,
+            "Question": "Mengapa saya tidak menemukan tombol untuk mengundah Abstrak Peraturan Perundang-Undangan?",
+            "Answer": "Kemungkinan besar berkas abstrak peraturan perundang-undangan tersebut belum diunggah. Silahkan menghubungi kami terkait hal tersebut.",
+            "UserID": 15,
+            "ModifiedDate": "2019-03-13T00:00:00"
+        }
     ]
 }

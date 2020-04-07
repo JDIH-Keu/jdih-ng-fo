@@ -1,1 +1,27 @@
-<p>faq works!</p>
+<section class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+                    <form class="form inputs-underline" novalidate="novalidate">
+                        <h3>Frequently Asked Question (FAQ)</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" [(ngModel)]="searchText" name="name" id="name"
+                                placeholder="Enter your search">
+                        </div>
+                    </form>
+                </section>
+                <section>
+                    <div class="answer" *ngFor="let item of this.data | filter : {query:searchText, fields: ['Answer', 'Question']}">
+                        <div class="box">
+                            <h3>{{item.Question}}</h3>
+                            <p>{{item.Answer}}
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -14,6 +14,7 @@ import { PageTitleComponent } from './components/page-title/page-title.component
 import { MainNavigationComponent } from './components/main-navigation/main-navigation.component';
 import { SecondaryNavigationComponent } from './components/secondary-navigation/secondary-navigation.component';
 import { BigSearchComponent } from './components/big-search/big-search.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BigSearchComponent } from './components/big-search/big-search.component
     SecondaryNavigationComponent,
     BigSearchComponent,
     TematikComponent,
-    GridItemsComponent
+    GridItemsComponent,
+    FilterPipe
   ],
   exports: [
     HeaderComponent,
@@ -34,7 +36,8 @@ import { BigSearchComponent } from './components/big-search/big-search.component
     SecondaryNavigationComponent,
     BigSearchComponent,
     TematikComponent,
-    GridItemsComponent
+    GridItemsComponent,
+    FilterPipe
   ],
   imports: [
     CommonModule,
