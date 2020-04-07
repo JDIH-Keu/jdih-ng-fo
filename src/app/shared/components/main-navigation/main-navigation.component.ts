@@ -31,18 +31,22 @@ export class MainNavigationComponent implements OnInit {
 
   expandMenu(event) {
     const grandParent = event.target.closest('ul');
+    const parent = event.target.closest('li');
+
     grandParent.childNodes.forEach(element => {
       if (element.nodeName !== '#comment' && element.classList.contains('nav-item')) {
-        element.classList.remove('hover');
+        if (!element.isSameNode(parent)) {
+          element.classList.remove('hover');
+        }
       }
     });
 
-    const parent = event.target.closest('li');
     if (parent.classList.contains('hover')) {
       parent.classList.remove('hover');
     }
     else {
       parent.classList.add('hover');
+      console.log(parent.isSameNode());
     }
   }
 

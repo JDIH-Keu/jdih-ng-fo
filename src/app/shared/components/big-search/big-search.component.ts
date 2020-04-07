@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { BentukPUUService } from '../../../shared/services/bentuk-puu.service';
 import { ScopeService } from '../../../shared/services/scope.service';
 import { BentukPUU } from '../../../shared/models/bentuk-puu';

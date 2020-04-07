@@ -1,10 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationStart, ActivatedRoute, RoutesRecognized } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'jdih-ng-fo';
+export class AppComponent implements OnInit {
+  pageTitle: string;
+  showSearchBox: boolean;
+
+  constructor(private router: Router, private route: ActivatedRoute) {
+    router.events.subscribe((event: any) => {
+      if (event instanceof NavigationStart) {
+        this.showSearchBox = event.url === '/';
+      }
+
+      if (event instanceof RoutesRecognized) {
+           const data = event.state.root.firstChild.data.title;
+           this.pageTitle = data ? data : '';
+        }
+    });
+  }
+
+  ngOnInit(): void {
+
+  }
 }

@@ -5,3 +5,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.hero .hero-wrapper {
+    padding-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+    .hero .hero-wrapper {
+        padding-bottom: 0;
+    }
+}

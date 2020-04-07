@@ -30,7 +30,7 @@
             ],
             "styles": [
               "src/assets/bootstrap/css/bootstrap.css",
-              "src/assets/css/style.css",
+              "src/styles.scss",
               "src/assets/fonts/font-awesome.css"
             ],
             "scripts": [

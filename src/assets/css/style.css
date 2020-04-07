@@ -358,9 +358,7 @@
     background-color: #fff;
 }
 /*background-image: url("../../assets/img/hero-overlay.png"); background-size: contain; background-position: bottom center; background-repeat: no-repeat; padding-bottom: 4rem; position: relative; background-color:#fff; z-index: 3;*/
-.hero .hero-wrapper {
-    padding-bottom: 7rem;
-}
+
 
 .hero ul {
     list-style: none;

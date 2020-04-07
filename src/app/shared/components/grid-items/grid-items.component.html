@@ -1,7 +1,7 @@
 <section class="block">
     <div class="container">
         <h2>{{ title }}</h2>
-        <div [ngClass]="['items', 'grid', this.ItemClassLargeScreen, this.ItemClassExtraLargeScreen, this.ItemClassSmallScreen]">
+        <div [ngClass]="['items', 'grid', this.ItemClassLargeScreen, ItemClassMediumScreen, this.ItemClassExtraLargeScreen, this.ItemClassSmallScreen]">
             <div class="item" *ngFor="let item of this.data">
                 <div class="wrapper">
                     <div class="description">
