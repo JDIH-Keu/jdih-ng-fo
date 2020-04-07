@@ -1,0 +1,290 @@
+{
+    "defaultPeraturan": [
+        {
+            "Id": 1,
+            "Nomor": "168/PMK.08/2019",
+            "Judul": "Lelang Surat Utang Negara di Pasar Perdana Domestik",
+            "Tanggal": "14 November 2019"
+        }
+    ],
+    "defaultCategory": [
+        {
+            "Id": 1,
+            "Text": "EODB",
+            "Description": "Ease of Doing Business",
+            "URL": "#",
+            "Subject": "EODB",
+            "Image": "assets/icons/category-furniture-b.png"
+        },
+        {
+            "Id": 1,
+            "Text": "Bea Masuk",
+            "Description": "Tarif Bea Masuk",
+            "URL": "#",
+            "Subject": "EODB",
+            "Image": "assets/icons/category-furniture-b.png"
+        },
+        {
+            "Id": 1,
+            "Text": "BMN",
+            "Description": "Barang Milik Negara",
+            "URL": "#",
+            "Subject": "EODB",
+            "Image": "assets/icons/category-furniture-b.png"
+        },
+        {
+            "Id": 1,
+            "Text": "SBSN",
+            "Description": "Surat Berharga SYariah Negara",
+            "URL": "#",
+            "Subject": "EODB",
+            "Image": "assets/icons/category-furniture-b.png"
+        },
+        {
+            "Id": 1,
+            "Text": "AEOI",
+            "Description": "Pertukaran Informasi Perpajakan",
+            "URL": "#",
+            "Subject": "EODB",
+            "Image": "assets/icons/category-furniture-b.png"
+        },
+        {
+            "Id": 1,
+            "Text": "APBN 2019",
+            "Description": "APBN 2019",
+            "URL": "#",
+            "Subject": "EODB",
+            "Image": "assets/icons/category-furniture-b.png"
+        },
+        {
+            "Id": 1,
+            "Text": "Dana Desa",
+            "Description": "Pengelolaan Dana Desa",
+            "URL": "#",
+            "Subject": "EODB",
+            "Image": "assets/icons/category-furniture-b.png"
+        },
+        {
+            "Id": 1,
+            "Text": "Tarif BLU",
+            "Description": "Tarif Badan Layanan Umum",
+            "URL": "#",
+            "Subject": "EODB",
+            "Image": "assets/icons/category-furniture-b.png"
+        }
+    ],
+    "defaultScope": [
+        {
+            "Id": 1,
+            "Keterangan": "Publik"
+        },
+        {
+            "Id": 1,
+            "Keterangan": "Kementerian Keuangan"
+        },
+        {
+            "Id": 1,
+            "Keterangan": "Internal Unit Eselon I"
+        }
+    ],
+    "defaultBentuk": [
+        {
+            "Id": 1,
+            "Keterangan": "Undang-Undang Dasar"
+        },
+        {
+            "Id": 2,
+            "Keterangan": "Undang-Undang"
+        },
+        {
+            "Id": 3,
+            "Keterangan": "Perpu"
+        },
+        {
+            "Id": 4,
+            "Keterangan": "Peraturan Pemerintah"
+        },
+        {
+            "Id": 5,
+            "Keterangan": "Peraturan Presiden"
+        },
+        {
+            "Id": 6,
+            "Keterangan": "Peraturan Menteri Keuangan"
+        },
+        {
+            "Id": 7,
+            "Keterangan": "Keputusan Menteri Keuangan"
+        },
+        {
+            "Id": 8,
+            "Keterangan": "Peraturan Unit Eselon I"
+        }
+    ],
+    "defaultMenu": [
+        {
+            "Link": "#",
+            "Name": "Informasi Hukum",
+            "ParentId": -1,
+            "Type": "",
+            "Order": 0,
+            "PageId": 0,
+            "Id": 0,
+            "Items": [
+                {
+                    "Link": "peraturan",
+                    "Name": "Peraturan",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "putusan",
+                    "Name": "Putusan",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "monografi",
+                    "Name": "Monografi",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "artikel",
+                    "Name": "Artikel",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                }
+            ]
+        },
+        {
+            "Link": "#",
+            "Name": "Informasi Lain",
+            "ParentId": -1,
+            "Type": "",
+            "Order": 0,
+            "PageId": 0,
+            "Id": 0,
+            "Items": [
+                {
+                    "Link": "pages/simplifikasi",
+                    "Name": "Simplifikasi",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "kurs",
+                    "Name": "Kurs MK",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "pages/pustakahukum",
+                    "Name": "Pustaka Hukum",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "berita",
+                    "Name": "Berita",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                }
+            ]
+        },
+        {
+            "Link": "#",
+            "Name": "Perihal",
+            "ParentId": -1,
+            "Type": "",
+            "Order": 0,
+            "PageId": 0,
+            "Id": 0,
+            "Items": [
+                {
+                    "Link": "tentang",
+                    "Name": "Tentang JDIH",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "faq",
+                    "Name": "FAQ",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "feedback",
+                    "Name": "Saran/Pertanyaan",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                },
+                {
+                    "Link": "page/disclaimer",
+                    "Name": "Disclaimer",
+                    "ParentId": -1,
+                    "Type": "",
+                    "Order": 0,
+                    "PageId": 0,
+                    "Id": 0
+                }
+            ]
+        }
+    ],
+    "examplePeraturan": [
+        {
+            "Id": 1,
+            "Nomor": "25/PMK.05/2020",
+            "Kode": "25/PMK.05/2020",
+            "Judul": "Tata Cara Pengalokasian, Penganggaran, Pencairan, dan Pertanggungjawaban Dana Kartu Prakerja",
+            "Tanggal": "21 Maret 2020"
+        },
+        {
+            "Id": 2,
+            "Nomor": "24/PMK.07/2020",
+            "Kode": "24/PMK.07/2020",
+            "Judul": "Perubahan atas Peraturan Menteri Keuangan Nomor 74/PMK.07 /2016 tentang Penyelenggaraan Sistem Informasi Keuangan Daerah",
+            "Tanggal": "21 Maret 2020"
+        },
+        {
+            "Id": 3,
+            "Nomor": "23/PMK.03/2020",
+            "Kode": "23/PMK.03/2020",
+            "Judul": "Insentif Pajak untuk Wajib Pajak Terdampak Wabah Virus Corona",
+            "Tanggal": "21 Maret 2020"
+        }
+    ]
+}

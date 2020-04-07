@@ -1,0 +1,16 @@
+<section class="block">
+    <div class="container">
+        <h2>{{this.title}}</h2>
+        <ul class="categories-list clearfix">
+            <li *ngFor="let tematik of this.data">
+                <i class="tematik-icon">
+                    <img [src]="tematik.Image" alt="">
+                </i>
+                <h3><a [href]="tematik.URL">{{tematik.Text}}</a></h3>
+                <div class="sub-categories">
+                    <a [href]="tematik.URL">{{tematik.Description}}</a>
+                </div>
+            </li>    
+        </ul>
+    </div>
+</section>

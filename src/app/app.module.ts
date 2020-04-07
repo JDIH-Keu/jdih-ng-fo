@@ -8,32 +8,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { HeaderComponent } from './layout/components/header/header.component';
-import { FooterComponent } from './layout/components/footer/footer.component';
-import { TematikComponent } from './layout/components/tematik/tematik.component';
-import { PageTitleComponent } from './layout/components/page-title/page-title.component';
-import { MainNavigationComponent } from './layout/components/main-navigation/main-navigation.component';
-import { SecondaryNavigationComponent } from './layout/components/secondary-navigation/secondary-navigation.component';
-import { BigSearchComponent } from './layout/components/big-search/big-search.component';
-import { NgSelectModule } from '@ng-select/ng-select';
+import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    TematikComponent,
-    PageTitleComponent,
-    MainNavigationComponent,
-    SecondaryNavigationComponent,
-    BigSearchComponent
+    AppComponent
   ],
   imports: [
+    SharedModule,
     CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgSelectModule,
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],

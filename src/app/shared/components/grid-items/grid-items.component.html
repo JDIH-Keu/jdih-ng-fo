@@ -1,0 +1,33 @@
+<section class="block">
+    <div class="container">
+        <h2>{{ title }}</h2>
+        <div [ngClass]="['items', 'grid', this.ItemClassLargeScreen, this.ItemClassExtraLargeScreen, this.ItemClassSmallScreen]">
+            <div class="item" *ngFor="let item of this.data">
+                <div class="wrapper">
+                    <div class="description">
+                        <h3>{{ item.Nomor }}</h3>
+                        <p>{{ item.Judul }}</p>
+                    </div>
+
+                
+                    <div class="meta">
+                        <figure>
+                            <i class="fa fa-calendar-o"></i> {{ item.Tanggal }}
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <i class="fa fa-user"></i>Pembiayaan
+                            </a>
+                        </figure>
+                    </div>
+                    <!--end meta-->
+
+                    <!--end description-->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,28 @@
+<div class="main-navigation">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+            <a class="navbar-brand" routerLink="" >
+                <img routerLink="" class="d-sm-none d-md-inline d-none d-sm-inline" src="assets/img/jdihn.png" style="height:40px"
+                    alt="">
+                <img routerLink=""  class="d-inline" src="assets/img/kemenkeu.png" style="height:40px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li [ngClass]="[ hasChild(menu) ? 'has-child nav-item' : 'nav-item']" *ngFor="let menu of this.pageMenus">
+                        <a class="nav-link" (click)="expandMenu($event)" href="#">{{menu.Name}}</a>
+                        <ul class="child" *ngIf="hasChild(menu)">
+                            <li class="nav-item" *ngFor="let submenu of menu.Items">
+                                <a [routerLink]="submenu.Link" class="nav-link">{{submenu.Name}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>

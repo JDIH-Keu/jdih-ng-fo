@@ -1,0 +1,462 @@
+/*------ Items ------*/
+.items {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem; 
+}
+/*------ Item ------*/
+.items .item {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.items .item .wrapper {
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s box-shadow ease, 0.3s transform ease;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  position: relative;
+  transform: translateY(0); /*padding-bottom: 5rem;*/
+}
+.items .item .wrapper:hover {
+  box-shadow: 0 0.4rem 3.3rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.2rem);
+}
+
+
+/*------ Tags ------*/
+.items .item .tag {
+  position: absolute;
+}
+/*------ Call to action item ------*/
+.items .item .tag {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  left: 1.8rem;
+  top: 12rem;
+  transition: 0.3s background-color ease;
+  padding: 0.4rem 0.5rem;
+}
+/*------ H3 heading ------*/
+.items .item h3 {
+  position: relative;
+  padding-right: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.items .item h3 a {
+  color: #fff;
+  transition: none;
+  text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.6);
+  display: block;
+}
+.items .item h3 a:hover {
+  text-decoration: underline;
+}
+.items .item h3 a.category {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  transition: 0.3s background-color ease;
+  font-weight: 600;
+  font-size: 1rem;
+  text-shadow: none;
+  text-decoration: none;
+  top: inherit;
+  bottom: 1rem;
+  left: 0;
+}
+.items .item h3 .tag:not(.category) {
+  background-color: #fff;
+  top: inherit;
+  bottom: 16rem;
+  left: 0;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.6;
+  transition: none;
+  pointer-events: none;
+}
+/*------ H4 heading ------*/
+.items .item h4 {
+  position: relative;
+  font-weight: 300;
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+.items .item h4 a {
+  color: #fff;
+  transition: none;
+}
+.items .item h4 a:hover {
+  text-decoration: underline;
+}
+
+/*------ Meta ------*/
+.items .item .meta {
+    background-color: #f8f8f8;
+    padding: 1.8rem;
+    font-size: 1.2rem;
+    width: 100%;
+    white-space: nowrap;
+    bottom: 0;
+    position: absolute;
+}
+.items .item .meta figure {
+  opacity: 0.6;
+  margin-right: 2rem;
+  display: inline-block;
+}
+.items .item .meta figure i {
+  margin-right: 1rem;
+}
+.items .item .meta figure a {
+  transition: 0.3s color ease;
+}
+.items .item .meta:before {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f8f8f8+100&0+0,1+50 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(248, 248, 248, 0) 0%,
+    rgba(248, 248, 248, 1) 50%,
+    rgba(248, 248, 248, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(248, 248, 248, 0) 0%,
+    rgba(248, 248, 248, 1) 50%,
+    rgba(248, 248, 248, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(248, 248, 248, 0) 0%,
+    rgba(248, 248, 248, 1) 50%,
+    rgba(248, 248, 248, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8f8f8', endColorstr='#f8f8f8',GradientType=1 ); /* IE6-9 */
+  height: 100%;
+  width: 4rem;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+/*------ Description ------*/
+.items .item .description {
+  font-size: 1.3rem;
+  padding: 1.8rem 1.8rem 0 1.8rem;
+  
+}
+.items .item .description p {
+  margin-bottom: 0;
+}
+
+.items .item figure {
+  margin-bottom: 0;
+}
+
+/*------------------*/
+.items .item {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.items .item .wrapper {
+  width: 100%;
+  height: 200px;
+  max-height: 250px;
+}
+.items:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+
+.items.grid .item{
+  float: left;
+}
+.items.grid .item .wrapper {
+  float: left;
+}
+.items.grid .item p{
+  height: 6rem;
+  overflow: hidden;
+}
+
+.items.grid.compact .item {
+  height: inherit;
+}
+.items.grid.compact .item .wrapper {
+  height: 31rem;
+}
+.items.grid.compact .item .wrapper .detail {
+  display: none;
+}
+
+.items.list {
+  height: inherit !important; /*-------------------------*/ /*-- Compact Item - List --*/ /*-------------------------*/
+}
+
+/*------ Item ------*/
+.items.list .item {
+  position: relative !important;
+  top: inherit !important;
+  left: inherit !important;
+}
+.items.list .item .wrapper {
+  min-height: 18rem;
+  padding-bottom: 0;
+}
+
+/*------ H3 ------*/
+.items.list .item h3 {
+  top: 2.5rem;
+  font-size: 2.2rem;
+  color: #000;
+  left: 27rem;
+  bottom: inherit;
+  width: 100%;
+}
+.items.list .item h3 a:not(.category) {
+  color: #000;
+  text-shadow: none;
+  display: inline-block;
+}
+.items.list .item h3 a:not(.category):hover {
+  text-decoration: none;
+  color: #005598;
+}
+.items.list .item h3 .tag:not(.category) {
+  position: relative;
+  top: -0.2rem;
+  background-color: transparent;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+}
+.items.list .item h3 .tag.category {
+  position: absolute;
+  color: #fff;
+  bottom: inherit;
+  top: -1rem;
+  left: -25.5rem;
+}
+/*------ H4 ------*/
+.items.list .item h4 {
+  top: 5.5rem;
+  left: 27rem;
+}
+.items.list .item h4 a {
+  color: #000;
+}
+
+/*------ Tag ------*/
+.items.list .item .tag {
+  top: 2rem;
+}
+/*------ Meta ------*/
+.items.list .item .meta {
+  position: absolute;
+  padding: 3rem 2rem 0 0;
+  right: 0;
+  width: auto;
+  font-size: 1.1rem;
+  background-color: transparent;
+  text-align: right;
+  top: 0;
+  z-index: 1;
+}
+.items.list .item .meta figure {
+  display: block;
+  margin-right: 0;
+}
+.items.list .item .meta:before {
+  display: none;
+}
+/*------ Description ------*/
+.items.list .item .description {
+  position: absolute;
+  bottom: 2rem;
+  padding: 0;
+  left: 27rem;
+  z-index: 1;
+  min-height: 4rem;
+  text-align: justify;
+  overflow: hidden;
+}
+.items.list .item .description p {
+  width: 100%;
+}
+
+
+.items.list.compact .item {
+  min-height: 17rem;
+}
+
+.items.list.compact .item h3,
+.items.list.compact .item h4,
+.items.list.compact .item .description {
+  left: 2rem;
+}
+.items.list.compact .item h3 .tag.category {
+  left: -20.3rem;
+}
+
+.items.list.compact .item .description {
+  padding-right: 2rem;
+  top: 5.5rem;
+}
+.items.list.compact .item .description p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .items.grid.grid-xl-4-items .item{
+    width: 25%;
+  }
+  .items.grid.grid-xl-3-items .item {
+    width: 33.33%;
+  }
+  .items.grid.grid-xl-2-items .item {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .items.grid.grid-lg-4-items .item {
+    width: 25%;
+  }
+  .items.grid.grid-lg-3-items .item {
+    width: 33.33%;
+  }
+  .items.grid.grid-lg-2-items .item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .items.grid.grid.grid-md-4-items .item {
+    width: 25%;
+  }
+  .items.grid.grid.grid-md-3-items .item {
+    width: 33.33%;
+  }
+  .items.grid.grid.grid-md-2-items .item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .items.grid[class*="grid-"] .item {
+    width: 100%;
+    display: block;
+  }
+  .items.list .item .wrapper,
+  .items.list.compact .item .wrapper {
+    min-height: inherit;
+  }
+
+  .items.list .item h3,
+  .items.list.compact .item h3 {
+    left: 2rem;
+    bottom: 8rem;
+    top: inherit;
+  }
+  .items.list .item h3 a:not(.category),
+  .items.list.compact .item h3 a:not(.category) {
+    color: #fff;
+  }
+
+  .items.list .item h3 .tag.category,
+  .items.list.compact .item h3 .tag.category {
+    top: -3rem;
+    left: 0;
+    bottom: auto;
+  }
+  .items.list .item h3 .tag:not(.category),
+  .items.list.compact .item h3 .tag:not(.category) {
+    position: absolute;
+    top: -15rem;
+    bottom: auto;
+    left: 0;
+    background-color: #fff;
+    border: none;
+  }
+  .items.list .item h4,
+  .items.list.compact .item h4 {
+    top: 20rem;
+    left: 2rem;
+  }
+  .items.list .item h4 a,
+  .items.list.compact .item h4 a {
+    color: #fff;
+  }
+  .items.list .item h4 a:before,
+  .items.list.compact .item h4 a:before {
+    color: #fff;
+  }
+
+
+  .items.list .item .description,
+  .items.list.compact .item .description {
+    position: relative;
+    left: 0;
+    padding: 4rem 2rem;
+    height: 10rem;
+  }
+
+  .items.list .item .meta,
+  .items.list.compact .item .meta {
+    background-color: #f8f8f8;
+    padding: 1.8rem;
+    font-size: 1.2rem;
+    width: 100%;
+    white-space: nowrap;
+    bottom: 0;
+    position: absolute;
+  }
+  .items.list .item .meta figure,
+  .items.list.compact .item .meta figure {
+    opacity: 0.6;
+    margin-right: 2rem;
+    display: inline-block;
+  }
+  .items.list .item .meta figure i,
+  .items.list.compact .item .meta figure i {
+    margin-right: 1rem;
+  }
+  .items.list .item .meta figure a,
+  .items.list.compact .item .meta figure a {
+    transition: 0.3s color ease;
+  }
+  .items.list .item .meta:before,
+  .items.list.compact .item .meta:before {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f8f8f8+100&0+0,1+50 */
+    background: -moz-linear-gradient(
+      left,
+      rgba(248, 248, 248, 0) 0%,
+      rgba(248, 248, 248, 1) 50%,
+      rgba(248, 248, 248, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      rgba(248, 248, 248, 0) 0%,
+      rgba(248, 248, 248, 1) 50%,
+      rgba(248, 248, 248, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      rgba(248, 248, 248, 0) 0%,
+      rgba(248, 248, 248, 1) 50%,
+      rgba(248, 248, 248, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8f8f8', endColorstr='#f8f8f8',GradientType=1 ); /* IE6-9 */
+    height: 100%;
+    width: 4rem;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+}
