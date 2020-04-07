@@ -1,3 +1,55 @@
+export const defaultScope = [
+    {
+        "Id": 1,
+        "Keterangan": "Publik"
+    },
+    {
+        "Id": 1,
+        "Keterangan": "Kementerian Keuangan"
+    },
+    {
+        "Id": 1,
+        "Keterangan": "Internal Unit Eselon I"
+    }
+]
+
+export const defaultBentuk = [
+    {
+        "Id": 1,
+        "Keterangan": "Undang-Undang Dasar"
+    },
+    {
+        "Id": 2,
+        "Keterangan": "Undang-Undang"
+    },
+    {
+        "Id": 3,
+        "Keterangan": "Perpu"
+    },
+    {
+        "Id": 4,
+        "Keterangan": "Peraturan Pemerintah"
+    },
+    {
+        "Id": 5,
+        "Keterangan": "Peraturan Presiden"
+    },
+    {
+        "Id": 6,
+        "Keterangan": "Peraturan Menteri Keuangan"
+    },
+    {
+        "Id": 7,
+        "Keterangan": "Keputusan Menteri Keuangan"
+    },
+    {
+        "Id": 8,
+        "Keterangan": "Peraturan Unit Eselon I"
+    },
+
+
+]
+
 export const defaultMenu = [
     {
         "Link": "#",

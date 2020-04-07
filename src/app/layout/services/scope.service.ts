@@ -2,25 +2,25 @@ import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BaseCrudService } from '../../shared/services/base-crud.service';
-import { PageMenu } from '../models/page-menu';
+import { Scope } from '../models/scope';
 
-import { defaultMenu } from './dummy-data.js';
+import { defaultScope } from './dummy-data.js';
 
 @Injectable({
     providedIn: 'root'
 })
-export class PageMenuService extends BaseCrudService {
+export class ScopeService extends BaseCrudService {
 
     constructor(public http: HttpClient) {
         super();
     }
 
-    getDefault(): Observable<PageMenu[]> {
-        return of(defaultMenu);
+    getDefault(): Observable<Scope[]> {
+        return of(defaultScope);
     }
 
-    getAll(): Observable<PageMenu[]> {
+    getAll(): Observable<Scope[]> {
         const urlApi = 'api/PageMenu';
-        return this.http.get<PageMenu[]>(urlApi);
+        return this.http.get<Scope[]>(urlApi);
     }
 }

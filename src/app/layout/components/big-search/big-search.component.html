@@ -5,7 +5,7 @@
                 <div class="col-md-9 col-sm-9">
                     <div class="form-group">
                         <label for="what" class="col-form-label">Apa yang ingin Anda cari?</label>
-                        <input name="keyword" type="text" class="form-control" id="what"
+                        <input name="keyword" type="text" class="form-control" id="keyword"
                             placeholder="Ketik kata kunci pencarian">
                     </div>
                 </div>
@@ -15,9 +15,10 @@
             </div>
         </div>
         <div class="alternative-search-form">
-            <a href="#" class="icon" (click)="this.showAdvancedSearch = !this.showAdvancedSearch"><i
-                    class="fa fa-plus"></i>Pencarian Lanjut</a>
-            <div *ngIf="this.showAdvancedSearch">
+            <a href="#collapseAlternativeSearchForm" class="icon" data-toggle="collapse" aria-expanded="false"
+                aria-controls="collapseAlternativeSearchForm"><i class="fa fa-plus"></i>Pencarian Lanjut</a>
+
+            <div class="collapse" id="collapseAlternativeSearchForm">
                 <div class="wrapper">
                     <div class="form-row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -38,8 +39,8 @@
                                 </div>
                                 <div class="col-md-3 col-sm-3">
                                     <div class="form-group">
-                                        <ng-select [items]="simpleItems" [(ngModel)]="selectedSimpleItem"
-                                            [ngModelOptions]="{standalone: true}"
+                                        <ng-select [items]="BentukPUUItems" [(ngModel)]="selectedBentuk" bindLabel="Keterangan"
+                                            bindValue="Id" [ngModelOptions]="{standalone: true}"
                                             placeholder="Bentuk Peraturan">
                                         </ng-select>
                                     </div>
@@ -47,8 +48,8 @@
                                 </div>
                                 <div class="col-md-3 col-sm-3">
                                     <div class="form-group">
-                                        <ng-select [items]="simpleItems" [(ngModel)]="selectedSimpleItem"
-                                            [ngModelOptions]="{standalone: true}"
+                                        <ng-select [items]="ScopeItems" [(ngModel)]="selectedScope" bindLabel="Keterangan"
+                                            bindValue="Id" [ngModelOptions]="{standalone: true}"
                                             placeholder="Jangkauan Peraturan">
                                         </ng-select>
                                     </div>
