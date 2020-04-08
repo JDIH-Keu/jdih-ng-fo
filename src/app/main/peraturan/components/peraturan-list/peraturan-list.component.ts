@@ -50,7 +50,7 @@ export class PeraturanListComponent implements OnInit {
     return {
       Text: 'Detail',
       Icon: 'fa fa-list',
-      Link: 'detail'};
+      Link: '/peraturan/detail'};
   }
 
   generateButton(item: Peraturan) {
