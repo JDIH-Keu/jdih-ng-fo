@@ -1,0 +1,52 @@
+
+/*-----------------------------------------------------------------------------*/
+/* LIBRARY LIST */ 
+/*-----------------------------------------------------------------------------*/
+.library {
+    margin: 0;
+    background: #8093ae47;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s box-shadow ease, 0.3s transform ease;
+    border-radius: 0.5rem;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.book {
+    position: relative; top: 0; left: 0;
+    display: inline;
+    margin: 10px;
+    width: 15%; 
+    height: 30%;
+    cursor: pointer;
+}
+
+/* hover & active */
+.book:hover { background-color: #E5E5E5; }
+.book:active { background-color: #D9D9D9; }
+
+/*-----------------------------------------------------------------------------*/
+/* BOOK COVERS */ 
+/*-----------------------------------------------------------------------------*/
+.book .cover {
+    cursor: pointer;
+    display: inline;
+    width: 15%; 
+    height:30%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    zoom: 1;
+}
+
+.book .cover img {
+    background-color: #e5e5e5;
+    width: 15%; height: 30%;
+    padding: 5px;
+    border-width: 0px; /* border to be later leveraged by animation */ 
+    border-style: solid; 
+    border-color: #FFFFFF; 
+}
+
+
+.book.selected.left-side.first .cover, .book.selected.right-side .cover { left: 2px; right: auto;}
+.book.selected.right-side.last .cover , .book.selected.left-side .cover { left: auto; right: 2px;}

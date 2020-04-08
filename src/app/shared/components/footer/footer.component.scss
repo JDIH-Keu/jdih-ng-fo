@@ -1,12 +1,16 @@
 
 .footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding-top: 2rem;
+    padding-bottom: 4rem;
     background-color: #01347C;
 }
 
+.footer .background {
+    background-color: #01347C;
+}
 .footer p, .footer h2{
     color: #fff !important;
 }
@@ -17,18 +21,23 @@
 .footer nav ul {
     line-height: 3rem;
     opacity: .8;
+    color: #fff !important;
 }
 .footer address {
     opacity: .8;
+}
+
+.footer p, .footer h2, .footer a{
+    color: #fff !important;
 }
 
 @media (max-width: 767px) {
     .footer p, .footer h2{
        text-align: center;
     }
-
     .footer{
         padding-top: 4rem;
+        position: relative;
     }
 
     .footer .brand {

@@ -47,7 +47,8 @@ const routes: Routes = [
     path: 'feedback',
     data: { title: 'Pertanyaan/Masukan' },
     loadChildren: () => import('./main/feedback/feedback.module').then(m => m.FeedbackModule)
-  }
+  },
+  { path: 'pustaka', loadChildren: () => import('./main/pustaka/pustaka.module').then(m => m.PustakaModule) }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

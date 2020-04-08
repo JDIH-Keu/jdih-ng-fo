@@ -1,0 +1,42 @@
+<section class="block">
+    <div class="container" style="padding-bottom: 30px;">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h2>Pustaka Hukum</h2>
+                <p>Perpustakaan Hukum merupakan bagian dari Jaringan Dokumentasi dan Informasi Hukum
+                    (JDIH) Kementerian Keuangan, yang bertujuan untuk melaksanakan sebagian tugas dan fungsi Biro Hukum
+                    Sekretariat Jenderal Kementerian Keuangan yaitu penyusunan dokumentasi dan informasi peraturan
+                    perundang-undangan di bidang keuangan dan kekayaan negara. Landasan penyusunan dokumentasi dan
+                    informasi peraturan perundang-undangan di bidang keuangan dan kekayaan negara diatur dalam Peraturan
+                    Menteri Keuangan RI Nomor 240/PMK.01/2015 tanggal 22 Desember 2015.</p>
+                <div class="loader" *ngIf="!dataReady"></div>
+                <div *ngIf="dataReady">
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <br/>
+                <h2>Daftar Koleksi</h2>
+                <div class="content center">
+                    <div class="library">
+                        <div class="book" *ngFor="let buku of PustakaDataFiltered">
+                            <div class="cover"><img
+                                    [src]="'http://www.perpustakaan.kemenkeu.go.id/img/FileCover/' + buku.Image">
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <br/>
+                            <button (click)="LoadMore()" class="btn btn-primary btn-framed btn-rounded">Muat Lebih Banyak</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </div>
+        </div>
+
+
+    </div>
+</section>

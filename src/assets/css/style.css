@@ -265,30 +265,6 @@
 .feature-box figure h3 {
     margin-bottom: 1rem;
 }
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding-top: 12rem;
-    padding-bottom: 10rem;
-}
-.footer .background {
-    background-color: #01347C;
-}
-.footer p, .footer h2{
-    color: #fff !important;
-}
-.footer .brand {
-    margin-bottom: 4rem;
-    display: block;
-}
-.footer nav ul {
-    line-height: 3rem;
-    opacity: .8;
-}
-.footer address {
-    opacity: .8;
-}
 /********
 --- H ---
 ********/
@@ -614,6 +590,7 @@
 .page >.content {
     background-color: #f2f2f2;
     z-index: 1;
+    margin-bottom: 300px;
 }
 .page >.content:after {
     /* background-image: url("../../assets/img/footer-overlay.png"); */
@@ -1344,7 +1321,7 @@ h1 {
 h2 {
     font-family: 'Varela Round', sans-serif;
     font-size: 2.4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     padding-top: 1rem;
 }
 h3 {
@@ -2382,9 +2359,7 @@ textarea.form-control {
     .blog-posts-navigation .prev, .blog-posts-navigation .next {
         display: block;
     }
-    .footer {
-        position: relative;
-    }
+
     .form-slides {}
     .form-slides#category-tabs {}
     .form-slides#category-tabs:before, .form-slides#category-tabs:after {

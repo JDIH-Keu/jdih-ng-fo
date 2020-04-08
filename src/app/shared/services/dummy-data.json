@@ -241,7 +241,7 @@
                     "Id": 0
                 },
                 {
-                    "Link": "pages/pustakahukum",
+                    "Link": "pustaka",
                     "Name": "Pustaka Hukum",
                     "ParentId": -1,
                     "Type": "",
@@ -290,15 +290,6 @@
                 {
                     "Link": "faq",
                     "Name": "FAQ",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "feedback",
-                    "Name": "Saran/Pertanyaan",
                     "ParentId": -1,
                     "Type": "",
                     "Order": 0,
