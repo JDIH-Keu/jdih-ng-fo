@@ -16,6 +16,8 @@ import { SecondaryNavigationComponent } from './components/secondary-navigation/
 import { BigSearchComponent } from './components/big-search/big-search.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { PaginationComponent } from './pagination/pagination.component';
+import { ListItemComponent } from './components/list-item/list-item.component';
+import { FloatButtonComponent } from './components/float-button/float-button.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PaginationComponent } from './pagination/pagination.component';
     TematikComponent,
     GridItemsComponent,
     FilterPipe,
-    PaginationComponent
+    PaginationComponent,
+    ListItemComponent,
+    FloatButtonComponent
   ],
   exports: [
     HeaderComponent,
@@ -39,6 +43,9 @@ import { PaginationComponent } from './pagination/pagination.component';
     BigSearchComponent,
     TematikComponent,
     GridItemsComponent,
+    ListItemComponent,
+    PaginationComponent,
+    FloatButtonComponent,
     FilterPipe
   ],
   imports: [

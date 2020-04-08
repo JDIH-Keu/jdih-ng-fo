@@ -4,12 +4,12 @@
         <div [ngClass]="['items', 'grid', this.ItemClassLargeScreen, ItemClassMediumScreen, this.ItemClassExtraLargeScreen, this.ItemClassSmallScreen]">
             <div class="item" *ngFor="let item of this.data">
                 <div class="wrapper">
+                    <h3>{{ item.Nomor }}</h3>
                     <div class="description">
-                        <h3>{{ item.Nomor }}</h3>
+                      
                         <p>{{ item.Judul }}</p>
                     </div>
 
-                
                     <div class="meta">
                         <figure>
                             <i class="fa fa-calendar-o"></i> {{ item.Tanggal }}
@@ -20,13 +20,8 @@
                             </a>
                         </figure>
                     </div>
-                    <!--end meta-->
-
-                    <!--end description-->
-
                 </div>
             </div>
-
         </div>
     </div>
 

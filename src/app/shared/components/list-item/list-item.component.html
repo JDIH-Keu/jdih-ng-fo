@@ -1,0 +1,30 @@
+<div class="item">
+    <div class="ribbon-featured" *ngIf="ribbonText">
+        <div class="ribbon-start"></div>
+        <div class="ribbon-content">{{ribbonText}}</div>
+        <div class="ribbon-end">
+            <figure class="ribbon-shadow"></figure>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h3>
+            <a href="#">{{ title }}</a>
+        </h3>
+
+        <div class="description">
+            <p>{{ description}}</p>
+        </div>
+
+        <div class="additional-info">
+
+            <div class="col-md-12 col-sm-12">
+                <div class="item-link right d-md-block d-sm-none d-none"><a href="#" [routerLink]="detailButton.Link"><i
+                            [class]="detailButton.Icon"></i>{{ detailButton.Text }}</a></div>
+
+                <div *ngFor="let item of buttonData" class="item-link left"><a href="#" [routerLink]="item.Link"><i
+                            [class]="item.Icon"></i>{{ item.Text }}</a></div>
+
+            </div>
+        </div>
+    </div>
+</div>

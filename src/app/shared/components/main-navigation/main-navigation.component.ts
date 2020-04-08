@@ -46,7 +46,6 @@ export class MainNavigationComponent implements OnInit {
     }
     else {
       parent.classList.add('hover');
-      console.log(parent.isSameNode());
     }
   }
 

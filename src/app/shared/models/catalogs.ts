@@ -1,4 +1,4 @@
-import { Media } from '../../post/models/media';
+import { Media } from './media';
 import { RefSubyek } from './refrences';
 
 

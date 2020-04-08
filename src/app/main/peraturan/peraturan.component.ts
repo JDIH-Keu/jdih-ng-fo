@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PeraturanService } from '../../shared/services/peraturan.service';
 
 @Component({
   selector: 'app-peraturan',
@@ -7,10 +6,20 @@ import { PeraturanService } from '../../shared/services/peraturan.service';
   styleUrls: ['./peraturan.component.scss']
 })
 export class PeraturanComponent implements OnInit {
+  showModal = false;
 
-  constructor(private peraturanService: PeraturanService) { }
+  constructor() { }
 
   ngOnInit(): void {
+  }
+
+  handleFloatClick() {
+    this.showModal = true;
+  }
+
+  search(){
+    console.log('search begin');
+    this.showModal = false;
   }
 
 }
