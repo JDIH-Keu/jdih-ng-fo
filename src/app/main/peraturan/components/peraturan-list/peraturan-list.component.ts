@@ -59,17 +59,17 @@ export class PeraturanListComponent implements OnInit {
       {
         Text: 'Fulltext',
         Link: item.FullTextPDF,
-        Icon: 'fa file-pdf-o',
+        Icon: 'fa fa-file-pdf-o',
       },
       {
         Text: 'Abstrak',
         Link: item.AbstrakPDF,
-        Icon: 'fa file-pdf-o',
+        Icon: 'fa fa-eye',
       },
       {
         Text: 'Siaran Pers',
         Link: item.SiaranPers,
-        Icon: 'fa file-newspaper',
+        Icon: 'fa fa-newspaper-o',
       }
     ];
   }
