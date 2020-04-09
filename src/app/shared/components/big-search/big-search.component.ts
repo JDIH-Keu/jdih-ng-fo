@@ -1,8 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { BentukPUUService } from '../../../shared/services/bentuk-puu.service';
 import { ScopeService } from '../../../shared/services/scope.service';
 import { BentukPUU } from '../../../shared/models/bentuk-puu';
 import { Scope } from '../../../shared/models/scope';
+import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-big-search',
@@ -11,13 +13,10 @@ import { Scope } from '../../../shared/models/scope';
 })
 export class BigSearchComponent implements OnInit {
   showAdvancedSearch: boolean;
-
-  selectedBentuk = '';
-  selectedScope = '';
   BentukPUUItems: BentukPUU[];
   ScopeItems: Scope[];
 
-  constructor(private bentukPUUService: BentukPUUService, private scopeService: ScopeService ) { }
+  constructor(private bentukPUUService: BentukPUUService, private scopeService: ScopeService, private router: Router) { }
 
   ngOnInit(): void {
     this.bentukPUUService.getAll().subscribe(result => {
@@ -40,6 +39,16 @@ export class BigSearchComponent implements OnInit {
       }
     );
 
+
+  }
+
+  search(form: NgForm) {
+    // const params = Object.assign(form.value, {Isi: '', Status: ''})
+
+    this.router.navigate(['/peraturan/list'], {
+      queryParams: form.value,
+      fragment: 'anchor'
+    });
   }
 
 

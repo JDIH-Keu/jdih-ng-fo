@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-peraturan',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PeraturanComponent implements OnInit {
   showModal = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -17,8 +18,12 @@ export class PeraturanComponent implements OnInit {
     this.showModal = true;
   }
 
-  search(){
-    console.log('search begin');
+  search($event){
+    this.router.navigate(['/peraturan/list'], {
+      queryParams: $event,
+      fragment: 'anchor'
+    });
+
     this.showModal = false;
   }
 

@@ -18,6 +18,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { PaginationComponent } from './pagination/pagination.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { FloatButtonComponent } from './components/float-button/float-button.component';
+import { StatsComponent } from './components/stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FloatButtonComponent } from './components/float-button/float-button.com
     FilterPipe,
     PaginationComponent,
     ListItemComponent,
-    FloatButtonComponent
+    FloatButtonComponent,
+    StatsComponent
   ],
   exports: [
     HeaderComponent,

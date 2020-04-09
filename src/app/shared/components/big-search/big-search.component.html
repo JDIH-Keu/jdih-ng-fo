@@ -1,16 +1,16 @@
-<form class="hero-form form">
+<form #searchForm="ngForm" class="hero-form form">
     <div class="container">
         <div class="main-search-form">
             <div class="form-row">
                 <div class="col-md-9 col-sm-9">
                     <div class="form-group">
                         <label for="what" class="col-form-label">Apa yang ingin Anda cari?</label>
-                        <input name="keyword" type="text" class="form-control" id="keyword"
+                        <input name="Judul" #judul="ngModel" ngModel type="text" class="form-control" id="keyword"
                             placeholder="Ketik kata kunci pencarian">
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3">
-                    <button type="submit" class="btn btn-primary width-100">Cari</button>
+                    <button type="button" class="btn btn-primary width-100" (click)="search(searchForm)">Cari</button>
                 </div>
             </div>
         </div>
@@ -25,22 +25,22 @@
                             <div class="form-row">
                                 <div class="col-md-3 col-sm-3">
                                     <div class="form-group">
-                                        <input name="nomor" type="text" class="form-control small" id="nomor"
+                                        <input name="Nomor" #nomor="ngModel" ngModel type="text" class="form-control small" id="nomor"
                                             placeholder="Nomor Peraturan">
 
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-3">
                                     <div class="form-group">
-                                        <input name="tahun" type="text" class="form-control small" id="tahun"
+                                        <input name="Tahun" #tahun="ngModel" ngModel type="text" class="form-control small" id="tahun"
                                             placeholder="Tahun Peraturan">
 
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-3">
                                     <div class="form-group">
-                                        <ng-select [items]="BentukPUUItems" [(ngModel)]="selectedBentuk" bindLabel="Keterangan"
-                                            bindValue="Id" [ngModelOptions]="{standalone: true}"
+                                        <ng-select [items]="BentukPUUItems" name="Bentuk" #bentuk="ngModel" ngModel bindLabel="Keterangan"
+                                            bindValue="Id" 
                                             placeholder="Bentuk Peraturan">
                                         </ng-select>
                                     </div>
@@ -48,8 +48,8 @@
                                 </div>
                                 <div class="col-md-3 col-sm-3">
                                     <div class="form-group">
-                                        <ng-select [items]="ScopeItems" [(ngModel)]="selectedScope" bindLabel="Keterangan"
-                                            bindValue="Id" [ngModelOptions]="{standalone: true}"
+                                        <ng-select [items]="ScopeItems" name="Scope" #scope="ngModel" ngModel bindLabel="Keterangan"
+                                            bindValue="Id" 
                                             placeholder="Jangkauan Peraturan">
                                         </ng-select>
                                     </div>

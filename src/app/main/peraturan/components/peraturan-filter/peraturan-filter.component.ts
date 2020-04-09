@@ -1,10 +1,11 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 import { PeraturanService } from '../../../../shared/services/peraturan.service';
 import { BentukPUUService } from '../../../../shared/services/bentuk-puu.service';
 import { ScopeService } from '../../../../shared/services/scope.service';
 import { BentukPUU } from '../../../../shared/models/bentuk-puu';
 import { Scope } from '../../../../shared/models/scope';
-
+import { ActivatedRoute } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-peraturan-filter',
@@ -19,12 +20,20 @@ export class PeraturanFilterComponent implements OnInit {
   @Input() showCancelButton = false;
   @Output() searchEvent = new EventEmitter();
   @Output() cancelEvent = new EventEmitter();
+  @ViewChild('filterForm', { static: true })filterForm: NgForm;
 
   constructor(private peraturanService: PeraturanService,
               private bentukPUUService: BentukPUUService,
-              private scopeService: ScopeService) { }
+              private scopeService: ScopeService,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(data => {
+      setTimeout(() => {
+      this.filterForm.setValue(Object.assign(this.filterForm.value, data));
+      }, 1000);
+    });
+
     this.bentukPUUService.getAll().subscribe(result => {
       this.BentukPUUItems = result;
     },
@@ -56,16 +65,16 @@ export class PeraturanFilterComponent implements OnInit {
     );
   }
 
-  handleSearch($event){
-    this.searchEvent.emit($event);
+  handleSearch(form: NgForm) {
+    this.searchEvent.emit(form.value);
   }
 
-  handleCancel($event){
+  handleCancel($event) {
     this.cancelEvent.emit($event);
   }
 
-  reset() {
-
+  reset(form: NgForm) {
+    form.resetForm();
   }
 
 }

@@ -4,13 +4,13 @@
             <div class="col-md-9 col-sm-12">
                 <router-outlet *ngIf="!showModal"></router-outlet>
                 <div *ngIf="showModal">
-                    <app-peraturan-filter [showCancelButton]="true" (searchEvent)="search()" (cancelEvent)="showModal=false"></app-peraturan-filter>
+                    <app-peraturan-filter [showCancelButton]="true" (searchEvent)="search($event)" (cancelEvent)="showModal=false"></app-peraturan-filter>
                 </div>
             </div>
             <div class="col-md-3 d-md-block d-sm-none d-none" *ngIf="!showModal">
                 <aside class="sidebar">
                     <section>
-                        <app-peraturan-filter [showCancelButton]="false" (searchEvent)="search()"></app-peraturan-filter>
+                        <app-peraturan-filter [showCancelButton]="false" (searchEvent)="search($event)"></app-peraturan-filter>
                     </section>
                 </aside>
             </div>
