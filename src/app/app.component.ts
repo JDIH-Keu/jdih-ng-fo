@@ -20,11 +20,6 @@ export class AppComponent implements OnInit {
            const data = event.state.root.firstChild.data.title;
            this.pageTitle = data ? data : '';
         }
-
-      if (!(event instanceof NavigationEnd)) {
-          return;
-      }
-      window.scrollTo(0, 0);
     });
   }
 

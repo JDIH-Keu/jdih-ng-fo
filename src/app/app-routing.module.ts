@@ -51,7 +51,7 @@ const routes: Routes = [
   { path: 'pustaka', loadChildren: () => import('./main/pustaka/pustaka.module').then(m => m.PustakaModule) }
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 
