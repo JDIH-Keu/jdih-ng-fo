@@ -1,0 +1,17 @@
+<section class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="center">Daftar Regulasi Mengenai {{JudulTematik}}</h2>
+                <div class="bentuk-filter center" *ngIf="FilterData">
+                    <button href="#" *ngFor="let key of objectKeys(FilterData)" (click)="filterPeraturan(FilterData[key].Id)" class="btn btn-framed btn-rounded text-caps btn-info small">{{key + ' (' + FilterData[key].count + ')'}}</button>
+                </div>
+
+                <app-grid-items [data]="PeraturanListFiltered" [title]="JudulTematik"></app-grid-items>
+                <h2 class="center">Jelajahi Tematik Lain</h2>
+                <app-tematik title="" [data]="TematikData"></app-tematik>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -4,11 +4,11 @@
         <ul class="categories-list clearfix">
             <li *ngFor="let tematik of this.data">
                 <i class="tematik-icon">
-                    <img [src]="tematik.Image" alt="">
+                    <img [src]="tematik.Image" alt="" [queryParams]="{Id : tematik.Id}" [routerLink]="['/tematik']">
                 </i>
-                <h3><a [href]="tematik.URL">{{tematik.Text}}</a></h3>
+                <h3><a href="#" [queryParams]="{Id : tematik.Id}" [routerLink]="['/tematik']">{{tematik.Text}}</a></h3>
                 <div class="sub-categories">
-                    <a [href]="tematik.URL">{{tematik.Description}}</a>
+                    <a href="#" [queryParams]="{Id : tematik.Id}" [routerLink]="['/tematik']">{{tematik.Description}}</a>
                 </div>
             </li>    
         </ul>

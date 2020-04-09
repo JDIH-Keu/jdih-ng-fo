@@ -44,12 +44,19 @@ const routes: Routes = [
     loadChildren: () => import('./main/pages/pages.module').then(m => m.PagesModule)
   },
   {
+    path: 'tematik',
+    data: { title: 'Tematik' },
+    loadChildren: () => import('./main/tematik-page/tematik-page.module').then(m => m.TematikPageModule)
+  },
+  {
     path: 'feedback',
     data: { title: 'Pertanyaan/Masukan' },
     loadChildren: () => import('./main/feedback/feedback.module').then(m => m.FeedbackModule)
   },
-  { path: 'pustaka', loadChildren: () => import('./main/pustaka/pustaka.module').then(m => m.PustakaModule) }
+  { path: 'pustaka', loadChildren: () => import('./main/pustaka/pustaka.module').then(m => m.PustakaModule) },
+  { path: 'tematik-page', loadChildren: () => import('./main/tematik-page/tematik-page.module').then(m => m.TematikPageModule) }
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]

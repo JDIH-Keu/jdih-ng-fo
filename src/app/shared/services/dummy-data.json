@@ -313,6 +313,7 @@
             "Id": 1,
             "Nomor": "25/PMK.05/2020",
             "Kode": "25/PMK.05/2020",
+            "RefTypeId": 1,
             "Judul": "Tata Cara Pengalokasian, Penganggaran, Pencairan, dan Pertanggungjawaban Dana Kartu Prakerja",
             "Tanggal": "21 Maret 2020"
         },
@@ -320,6 +321,7 @@
             "Id": 2,
             "Nomor": "24/PMK.07/2020",
             "Kode": "24/PMK.07/2020",
+            "RefTypeId": 1,
             "Judul": "Perubahan atas Peraturan Menteri Keuangan Nomor 74/PMK.07 /2016 tentang Penyelenggaraan Sistem Informasi Keuangan Daerah",
             "Tanggal": "21 Maret 2020"
         },
@@ -327,6 +329,7 @@
             "Id": 3,
             "Nomor": "23/PMK.03/2020",
             "Kode": "23/PMK.03/2020",
+            "RefTypeId": 3,
             "Judul": "Insentif Pajak untuk Wajib Pajak Terdampak Wabah Virus Corona",
             "Tanggal": "21 Maret 2020"
         }
