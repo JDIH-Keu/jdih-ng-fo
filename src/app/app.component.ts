@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationStart, ActivatedRoute, RoutesRecognized } from '@angular/router';
+import { Router, NavigationStart, ActivatedRoute, RoutesRecognized, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +20,11 @@ export class AppComponent implements OnInit {
            const data = event.state.root.firstChild.data.title;
            this.pageTitle = data ? data : '';
         }
+
+      if (!(event instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo(0, 0);
     });
   }
 

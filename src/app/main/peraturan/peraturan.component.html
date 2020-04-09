@@ -18,6 +18,6 @@
     </div>
 </section>
 
-<div class="d-none d-block d-sm-block d-md-none">
+<div class="d-none d-block d-sm-block d-md-none" *ngIf="!showModal">
     <app-float-button (buttonClicked)="handleFloatClick()"></app-float-button>
 </div>
