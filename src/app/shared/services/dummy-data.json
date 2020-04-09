@@ -133,36 +133,36 @@
     ],
     "defaultBentuk": [
         {
-            "Id": 1,
-            "Keterangan": "Undang-Undang Dasar"
+            "RefTypeId": 0,
+            "RefTypeNames": "Undang-Undang Dasar"
         },
         {
-            "Id": 2,
-            "Keterangan": "Undang-Undang"
+            "RefTypeId": 1,
+            "RefTypeNames": "Undang-Undang"
         },
         {
-            "Id": 3,
-            "Keterangan": "Perpu"
+            "RefTypeId": 2,
+            "RefTypeNames": "Perpu"
         },
         {
-            "Id": 4,
-            "Keterangan": "Peraturan Pemerintah"
+            "RefTypeId": 3,
+            "RefTypeNames": "Peraturan Pemerintah"
         },
         {
-            "Id": 5,
-            "Keterangan": "Peraturan Presiden"
+            "RefTypeId": 4,
+            "RefTypeNames": "Peraturan Presiden"
         },
         {
-            "Id": 6,
-            "Keterangan": "Peraturan Menteri Keuangan"
+            "RefTypeId": 5,
+            "RefTypeNames": "Peraturan Menteri Keuangan"
         },
         {
-            "Id": 7,
-            "Keterangan": "Keputusan Menteri Keuangan"
+            "RefTypeId": 6,
+            "RefTypeNames": "Keputusan Menteri Keuangan"
         },
         {
-            "Id": 8,
-            "Keterangan": "Peraturan Unit Eselon I"
+            "RefTypeId": 7,
+            "RefTypeNames": "Peraturan Unit Eselon I"
         }
     ],
     "defaultMenu": [

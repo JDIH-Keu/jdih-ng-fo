@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Peraturan } from '../../../../shared/models/catalogs';
+import { Peraturan } from '../../../../shared/models/main/catalogs';
 
 @Component({
   selector: 'app-peraturan-list',

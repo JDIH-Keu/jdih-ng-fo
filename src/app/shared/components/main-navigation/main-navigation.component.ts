@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import { PageMenu } from '../../../shared/models/page-menu';
+import { PageMenu } from '../../models/pages/page-menu';
 import { PageMenuService } from '../../../shared/services/page-menu.service';
 
 @Component({

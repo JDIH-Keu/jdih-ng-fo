@@ -3,7 +3,7 @@ import { BaseCrudService } from './../../../shared/services/base-crud.service'
 import { Injectable } from '@angular/core'
 import { Observable } from 'rxjs/Observable'
 import { PageWidget } from '../../widget/models/page-widget'
-import { Page } from '../models/page'
+import { Page } from '../models/pages/page'
 import { PaginationResult } from '../../../shared/pagination/pagination';
 
 @Injectable({

@@ -2,7 +2,7 @@ import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BaseCrudService } from './base-crud.service';
-import { BentukPUU } from '../models/bentuk-puu';
+import { RefBentuk } from '../models/main/references';
 
 import * as dummyData from './dummy-data.json';
 
@@ -15,12 +15,12 @@ export class BentukPUUService extends BaseCrudService {
         super();
     }
 
-    getDefault(): Observable<BentukPUU[]> {
+    getDefault(): Observable<RefBentuk[]> {
         return of(dummyData.defaultBentuk);
     }
 
-    getAll(): Observable<BentukPUU[]> {
+    getAll(): Observable<RefBentuk[]> {
         const urlApi = 'api/PageMenu';
-        return this.http.get<BentukPUU[]>(urlApi);
+        return this.http.get<RefBentuk[]>(urlApi);
     }
 }

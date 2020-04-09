@@ -1,5 +1,5 @@
-import { Media } from './media';
-import { RefSubyek } from './refrences';
+import { Media } from '../media';
+import { RefSubyek } from './references';
 
 
 export class Peraturan {

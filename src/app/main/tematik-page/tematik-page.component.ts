@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Peraturan } from '../../shared/models/catalogs';
+import { Peraturan } from '../../shared/models/main/catalogs';
 import { Tematik } from '../../shared/models/tematik';
 import { PeraturanService } from '../../shared/services/peraturan.service';
 import { TematikService } from '../../shared/services/tematik.service';
-import { reduce } from 'rxjs/operators';
+import { HeaderService } from '../../shared/services/header.service';
+import { BentukPUUService } from 'src/app/shared/services/bentuk-puu.service';
+import { RefBentuk } from 'src/app/shared/models/main/references';
+
 
 @Component({
   selector: 'app-tematik-page',
@@ -11,25 +14,18 @@ import { reduce } from 'rxjs/operators';
   styleUrls: ['./tematik-page.component.scss']
 })
 export class TematikPageComponent implements OnInit {
-  JudulTematik = '';
+  JudulTematik = 'Contoh Tema';
   PeraturanList: Peraturan[];
+  BentukPeraturanList: RefBentuk[];
   PeraturanListFiltered: Peraturan[];
   TematikData: Tematik[];
   FilterData: any;
   objectKeys = Object.keys;
 
-  MapPeraturan = Object.assign({
-    0: 'UUD',
-    1: 'UU',
-    2: 'PERPU',
-    3: 'PP',
-    4: 'PERPRES',
-    5: 'KEPRES',
-    6: 'INPRES',
-    7: 'PMK',
-  });
-
-  constructor(private peraturanService: PeraturanService, private tematikService: TematikService) { }
+  constructor(private peraturanService: PeraturanService,
+              private tematikService: TematikService,
+              private headerService: HeaderService,
+              private bentukPUUService: BentukPUUService) { }
 
   ngOnInit(): void {
     // Get Tematik Data
@@ -42,6 +38,18 @@ export class TematikPageComponent implements OnInit {
         });
       }
     );
+
+    this.bentukPUUService.getAll().subscribe(result => {
+      this.BentukPeraturanList = result;
+    },
+      err => {
+        this.bentukPUUService.getDefault().subscribe(result => {
+          this.BentukPeraturanList = result;
+        });
+      }
+    );
+
+    this.headerService.updateImage('gantigambar.jpg');
 
     // Get Peraturan by Subject
     this.peraturanService.getAll().subscribe(result => {
@@ -69,17 +77,17 @@ export class TematikPageComponent implements OnInit {
     const group = { semua: { Id: -1, count: 0 } };
 
     data.forEach(element => {
-      const name = this.MapPeraturan[element[field]];
+      const name = this.BentukPeraturanList.find(bentuk => bentuk.RefTypeId === element[field]);
 
-      if (!group[name]) {
-        group[name] = { count: 1, Id: element[field] };
+      console.log(name);
+
+      if (!group[name.RefTypeNames]) {
+        group[name.RefTypeNames] = { count: 1, Id: element[field] };
       } else {
-        group[name].count += 1;
+        group[name.RefTypeNames].count += 1;
       }
       group.semua.count += 1;
     });
-
-    console.log(this.objectKeys(group));
 
     return group;
   }

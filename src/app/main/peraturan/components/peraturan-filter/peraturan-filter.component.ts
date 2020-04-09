@@ -2,7 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angu
 import { PeraturanService } from '../../../../shared/services/peraturan.service';
 import { BentukPUUService } from '../../../../shared/services/bentuk-puu.service';
 import { ScopeService } from '../../../../shared/services/scope.service';
-import { BentukPUU } from '../../../../shared/models/bentuk-puu';
+import { RefBentuk } from '../../../../shared/models/main/references';
 import { Scope } from '../../../../shared/models/scope';
 import { ActivatedRoute } from '@angular/router';
 import { NgForm } from '@angular/forms';
@@ -13,7 +13,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./peraturan-filter.component.scss']
 })
 export class PeraturanFilterComponent implements OnInit {
-  BentukPUUItems: BentukPUU[];
+  BentukPUUItems: RefBentuk[];
   ScopeItems: Scope[];
   StatusItems;
 

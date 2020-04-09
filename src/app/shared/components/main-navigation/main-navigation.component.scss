@@ -314,7 +314,9 @@
   }
 
   .main-navigation .navbar ul.navbar-nav > li.nav-item ul.child li {
-    border-bottom: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+
   }
 
   .main-navigation .navbar ul.navbar-nav > li.nav-item ul.child li ul {
@@ -324,6 +326,7 @@
 
   .main-navigation .navbar ul.navbar-nav > li.nav-item ul.child li a.nav-link {
     padding: 1rem 2.5rem;
+    color: #fff;
   }
 
   .main-navigation

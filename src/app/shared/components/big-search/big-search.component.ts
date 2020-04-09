@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { BentukPUUService } from '../../../shared/services/bentuk-puu.service';
 import { ScopeService } from '../../../shared/services/scope.service';
-import { BentukPUU } from '../../../shared/models/bentuk-puu';
+import { RefBentuk } from '../../../shared/models/main/references';
 import { Scope } from '../../../shared/models/scope';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
@@ -13,7 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class BigSearchComponent implements OnInit {
   showAdvancedSearch: boolean;
-  BentukPUUItems: BentukPUU[];
+  BentukPUUItems: RefBentuk[];
   ScopeItems: Scope[];
 
   constructor(private bentukPUUService: BentukPUUService, private scopeService: ScopeService, private router: Router) { }

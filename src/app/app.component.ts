@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationStart, ActivatedRoute, RoutesRecognized, NavigationEnd } from '@angular/router';
+import { HeaderService } from './shared/services/header.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent implements OnInit {
   pageTitle: string;
   showSearchBox: boolean;
 
-  constructor(private router: Router, private route: ActivatedRoute) {
+  constructor(private router: Router, private route: ActivatedRoute, private headerService: HeaderService) {
     router.events.subscribe((event: any) => {
       if (event instanceof NavigationStart) {
         this.showSearchBox = event.url === '/';
@@ -24,6 +25,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    this.headerService.getImage().subscribe(
+      data => console.log(data),
+      err => console.log(err)
+    );
   }
 }
