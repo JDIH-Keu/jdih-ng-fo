@@ -2,10 +2,11 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angu
 import { PeraturanService } from '../../../../shared/services/peraturan.service';
 import { BentukPUUService } from '../../../../shared/services/bentuk-puu.service';
 import { ScopeService } from '../../../../shared/services/scope.service';
-import { RefBentuk } from '../../../../shared/models/main/references';
+import { RefBentuk, RefSubyek } from '../../../../shared/models/main/references';
 import { Scope } from '../../../../shared/models/scope';
 import { ActivatedRoute } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { SubyekService } from '../../../../shared/services/subyek.service';
 
 @Component({
   selector: 'app-peraturan-filter',
@@ -15,6 +16,7 @@ import { NgForm } from '@angular/forms';
 export class PeraturanFilterComponent implements OnInit {
   BentukPUUItems: RefBentuk[];
   ScopeItems: Scope[];
+  subjectItems: RefSubyek[];
   StatusItems;
 
   @Input() showCancelButton = false;
@@ -25,6 +27,7 @@ export class PeraturanFilterComponent implements OnInit {
   constructor(private peraturanService: PeraturanService,
               private bentukPUUService: BentukPUUService,
               private scopeService: ScopeService,
+              private subyekService: SubyekService,
               private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -62,6 +65,13 @@ export class PeraturanFilterComponent implements OnInit {
           this.ScopeItems = result;
         });
       }
+    );
+  }
+
+  searchSubyek(text:string) {
+    if (text.length !== 2) { return; }
+    this.subyekService.getDefault(text).subscribe(
+      data => {this.subjectItems = data; }
     );
   }
 

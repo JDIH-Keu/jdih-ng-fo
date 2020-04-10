@@ -655,40 +655,7 @@
 .panel .horizontal-input-title {
     margin-top: 15px;
 }
-.page-pagination {
-    text-align: center;
-    margin: 6rem 0 3rem 0;
-}
-.page-pagination > nav {
-    display: inline-block;
-}
-.page-pagination > nav .pagination {
-    margin-bottom: 0;
-}
-.page-pagination > nav .pagination .page-item .page-link {
-    color: #000;
-    width: 4rem;
-    line-height: 4rem;
-    padding: inherit;
-    border: none;
-    background-color: transparent;
-    border-radius: .3rem;
-    font-size: 1.6rem;
-    margin: 0 .2rem;
-}
-.page-pagination > nav .pagination .page-item .page-link i {
-    font-size: 1.2rem;
-    color: rgba(0,0,0,.5);
-}
-.page-pagination > nav .pagination .page-item .page-link:hover {
-    background-color: #fff;
-    box-shadow: 0 0.2rem .7rem 0 rgba(0,0,0, .08);
-}
-.page-pagination > nav .pagination .page-item.active .page-link {
-    background-color: #005598;
-    color: #fff;
-    box-shadow: 0 .1rem 2rem rgba(0,0,0,.15);
-}
+
 .pricing {
     position: relative;
     margin-bottom: 15px;

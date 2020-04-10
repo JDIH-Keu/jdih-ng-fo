@@ -1,0 +1,24 @@
+<div class="page-pagination">
+    <nav aria-label="Pagination">
+        <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+            <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item previous-item">
+                <a (click)="setPage(pager.currentPage - 1)" class="page-link">
+                    <span aria-hidden="true">
+                        <i class="fa fa-chevron-left"></i>
+                    </span>
+                </a>
+            </li>
+            <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}"
+                class="page-item number-item">
+                <a (click)="setPage(page)" class="page-link">{{page}}</a>
+            </li>
+            <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item next-item">
+                <a (click)="setPage(pager.currentPage + 1)" class="page-link">
+                    <span aria-hidden="true">
+                        <i class="fa fa-chevron-right"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

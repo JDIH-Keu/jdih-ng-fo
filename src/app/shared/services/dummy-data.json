@@ -1,403 +1,419 @@
 {
-    "FeedbackExample": [
+  "subyekExample": [
+    {
+      "RefSubjectId": 1,
+      "RefSubjectCodes": "EODB",
+      "RefSubjectNames": "EODB"
+    },
+    {
+      "RefSubjectId": 1,
+      "RefSubjectCodes": "BMN",
+      "RefSubjectNames": "BMN"
+    },
+    {
+      "RefSubjectId": 1,
+      "RefSubjectCodes": "BLU",
+      "RefSubjectNames": "BLU"
+    }
+  ],
+  "FeedbackExample": [
+    {
+      "GuestBookID": 34725,
+      "Name": "Suraman",
+      "CateWrite": "Pertanyaan",
+      "Email": "jatimulyo80@gmail.com",
+      "Subject": "Pinjaman",
+      "Content": "Bagaimana soal pinjaman di bank.. akibat dampak firus \r\ncorona...  apa tindakan bagi pemerintah. Untuk menggapi. Dan \r\nbagimana sangsi untuk pihak bank yg masih ngotot minta \r\nansuran. Perbulanya... terimakasih.",
+      "DateWrite": "Kamis, 26-Maret-2020",
+      "Visible": true,
+      "Answer": "Terkait hal tersebut, Otoritas Jasa Keuangan (OJK) sbg \r\nregulator jasa keuangan membuat aturan teknis melalui POJK \r\nNo. 11/POJK.03/2020 tentang Stimulus Perekonomian Nasional \r\nsebagai Kebijakan countercyclical.\r\nSaudara dapat menghubungi Unit Teknis terkait di OJK untuk \r\ninformasi lebih lengkap",
+      "DateAnswer": "2020-03-27T00:00:00",
+      "CdLang": "1",
+      "UserID": 0
+    },
+    {
+      "GuestBookID": 34724,
+      "Name": "anwar harijana",
+      "CateWrite": "Pertanyaan",
+      "Email": "halikentik@gmail.com",
+      "Subject": "pengalihan tugas kpa",
+      "Content": "mohon info regulasi yang mengatur tentang pengalihan tugas \r\nkuasa pengguna anggaran kepada pejabat setingkat di \r\nbawahnya, terima kasih",
+      "DateWrite": "Selasa, 17-Maret-2020",
+      "Visible": true,
+      "Answer": "Silakan menghubungi Unit teknis pada Direktorat Jenderal \r\nAnggaran untuk informasi dimaksud",
+      "DateAnswer": "2020-03-27T00:00:00",
+      "CdLang": "1",
+      "UserID": 0
+    },
+    {
+      "GuestBookID": 34723,
+      "Name": "RIVOL HANS SALINDEHO",
+      "CateWrite": "Pertanyaan",
+      "Email": "jifricharly@gmail.com",
+      "Subject": "pertanyaan",
+      "Content": "maksud saya NOMOR 113/PMK.05/2012.",
+      "DateWrite": "Senin, 16-Maret-2020",
+      "Visible": true,
+      "Answer": "Dalam Pasal 3 PMK 113/PMK.05/2012 dimaksud mengatur tentang \r\nprinsip perjalanan dinas",
+      "DateAnswer": "2020-03-27T00:00:00",
+      "CdLang": "1",
+      "UserID": 0
+    }
+  ],
+  "defaultPeraturan": [
+    {
+      "Id": 1,
+      "Nomor": "168/PMK.08/2019",
+      "Judul": "Lelang Surat Utang Negara di Pasar Perdana Domestik",
+      "Tanggal": "14 November 2019"
+    }
+  ],
+  "defaultCategory": [
+    {
+      "Id": 1,
+      "Text": "EODB",
+      "Description": "Ease of Doing Business",
+      "URL": "#",
+      "Subject": "EODB",
+      "Image": "assets/icons/category-furniture-b.png"
+    },
+    {
+      "Id": 1,
+      "Text": "Bea Masuk",
+      "Description": "Tarif Bea Masuk",
+      "URL": "#",
+      "Subject": "EODB",
+      "Image": "assets/icons/category-furniture-b.png"
+    },
+    {
+      "Id": 1,
+      "Text": "BMN",
+      "Description": "Barang Milik Negara",
+      "URL": "#",
+      "Subject": "EODB",
+      "Image": "assets/icons/category-furniture-b.png"
+    },
+    {
+      "Id": 1,
+      "Text": "SBSN",
+      "Description": "Surat Berharga SYariah Negara",
+      "URL": "#",
+      "Subject": "EODB",
+      "Image": "assets/icons/category-furniture-b.png"
+    },
+    {
+      "Id": 1,
+      "Text": "AEOI",
+      "Description": "Pertukaran Informasi Perpajakan",
+      "URL": "#",
+      "Subject": "EODB",
+      "Image": "assets/icons/category-furniture-b.png"
+    },
+    {
+      "Id": 1,
+      "Text": "APBN 2019",
+      "Description": "APBN 2019",
+      "URL": "#",
+      "Subject": "EODB",
+      "Image": "assets/icons/category-furniture-b.png"
+    },
+    {
+      "Id": 1,
+      "Text": "Dana Desa",
+      "Description": "Pengelolaan Dana Desa",
+      "URL": "#",
+      "Subject": "EODB",
+      "Image": "assets/icons/category-furniture-b.png"
+    },
+    {
+      "Id": 1,
+      "Text": "Tarif BLU",
+      "Description": "Tarif Badan Layanan Umum",
+      "URL": "#",
+      "Subject": "EODB",
+      "Image": "assets/icons/category-furniture-b.png"
+    }
+  ],
+  "defaultScope": [
+    {
+      "Id": 1,
+      "Keterangan": "Publik"
+    },
+    {
+      "Id": 1,
+      "Keterangan": "Kementerian Keuangan"
+    },
+    {
+      "Id": 1,
+      "Keterangan": "Internal Unit Eselon I"
+    }
+  ],
+  "defaultBentuk": [
+    {
+      "RefTypeId": 0,
+      "RefTypeNames": "Undang-Undang Dasar"
+    },
+    {
+      "RefTypeId": 1,
+      "RefTypeNames": "Undang-Undang"
+    },
+    {
+      "RefTypeId": 2,
+      "RefTypeNames": "Perpu"
+    },
+    {
+      "RefTypeId": 3,
+      "RefTypeNames": "Peraturan Pemerintah"
+    },
+    {
+      "RefTypeId": 4,
+      "RefTypeNames": "Peraturan Presiden"
+    },
+    {
+      "RefTypeId": 5,
+      "RefTypeNames": "Peraturan Menteri Keuangan"
+    },
+    {
+      "RefTypeId": 6,
+      "RefTypeNames": "Keputusan Menteri Keuangan"
+    },
+    {
+      "RefTypeId": 7,
+      "RefTypeNames": "Peraturan Unit Eselon I"
+    }
+  ],
+  "defaultMenu": [
+    {
+      "Link": "#",
+      "Name": "Dokumen Hukum",
+      "ParentId": -1,
+      "Type": "",
+      "Order": 0,
+      "PageId": 0,
+      "Id": 0,
+      "Items": [
         {
-            "GuestBookID": 34725,
-            "Name": "Suraman",
-            "CateWrite": "Pertanyaan",
-            "Email": "jatimulyo80@gmail.com",
-            "Subject": "Pinjaman",
-            "Content": "Bagaimana soal pinjaman di bank.. akibat dampak firus \r\ncorona...  apa tindakan bagi pemerintah. Untuk menggapi. Dan \r\nbagimana sangsi untuk pihak bank yg masih ngotot minta \r\nansuran. Perbulanya... terimakasih.",
-            "DateWrite": "Kamis, 26-Maret-2020",
-            "Visible": true,
-            "Answer": "Terkait hal tersebut, Otoritas Jasa Keuangan (OJK) sbg \r\nregulator jasa keuangan membuat aturan teknis melalui POJK \r\nNo. 11/POJK.03/2020 tentang Stimulus Perekonomian Nasional \r\nsebagai Kebijakan countercyclical.\r\nSaudara dapat menghubungi Unit Teknis terkait di OJK untuk \r\ninformasi lebih lengkap",
-            "DateAnswer": "2020-03-27T00:00:00",
-            "CdLang": "1",
-            "UserID": 0
+          "Link": "peraturan",
+          "Name": "Peraturan",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
         },
         {
-            "GuestBookID": 34724,
-            "Name": "anwar harijana",
-            "CateWrite": "Pertanyaan",
-            "Email": "halikentik@gmail.com",
-            "Subject": "pengalihan tugas kpa",
-            "Content": "mohon info regulasi yang mengatur tentang pengalihan tugas \r\nkuasa pengguna anggaran kepada pejabat setingkat di \r\nbawahnya, terima kasih",
-            "DateWrite": "Selasa, 17-Maret-2020",
-            "Visible": true,
-            "Answer": "Silakan menghubungi Unit teknis pada Direktorat Jenderal \r\nAnggaran untuk informasi dimaksud",
-            "DateAnswer": "2020-03-27T00:00:00",
-            "CdLang": "1",
-            "UserID": 0
+          "Link": "putusan",
+          "Name": "Putusan",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
         },
         {
-            "GuestBookID": 34723,
-            "Name": "RIVOL HANS SALINDEHO",
-            "CateWrite": "Pertanyaan",
-            "Email": "jifricharly@gmail.com",
-            "Subject": "pertanyaan",
-            "Content": "maksud saya NOMOR 113/PMK.05/2012.",
-            "DateWrite": "Senin, 16-Maret-2020",
-            "Visible": true,
-            "Answer": "Dalam Pasal 3 PMK 113/PMK.05/2012 dimaksud mengatur tentang \r\nprinsip perjalanan dinas",
-            "DateAnswer": "2020-03-27T00:00:00",
-            "CdLang": "1",
-            "UserID": 0
+          "Link": "monografi",
+          "Name": "Monografi",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
+        },
+        {
+          "Link": "artikel",
+          "Name": "Artikel",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
         }
-    ],
-    "defaultPeraturan": [
+      ]
+    },
+    {
+      "Link": "#",
+      "Name": "Informasi Lain",
+      "ParentId": -1,
+      "Type": "",
+      "Order": 0,
+      "PageId": 0,
+      "Id": 0,
+      "Items": [
         {
-            "Id": 1,
-            "Nomor": "168/PMK.08/2019",
-            "Judul": "Lelang Surat Utang Negara di Pasar Perdana Domestik",
-            "Tanggal": "14 November 2019"
+          "Link": "pages/simplifikasi",
+          "Name": "Simplifikasi",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
+        },
+        {
+          "Link": "kurs",
+          "Name": "Kurs MK",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
+        },
+        {
+          "Link": "pustaka",
+          "Name": "Pustaka Hukum",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
+        },
+        {
+          "Link": "berita",
+          "Name": "Berita",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
         }
-    ],
-    "defaultCategory": [
+      ]
+    },
+    {
+      "Link": "#",
+      "Name": "Perihal",
+      "ParentId": -1,
+      "Type": "",
+      "Order": 0,
+      "PageId": 0,
+      "Id": 0,
+      "Items": [
         {
-            "Id": 1,
-            "Text": "EODB",
-            "Description": "Ease of Doing Business",
-            "URL": "#",
-            "Subject": "EODB",
-            "Image": "assets/icons/category-furniture-b.png"
+          "Link": "pages/tentang",
+          "Name": "Tentang JDIH",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
         },
         {
-            "Id": 1,
-            "Text": "Bea Masuk",
-            "Description": "Tarif Bea Masuk",
-            "URL": "#",
-            "Subject": "EODB",
-            "Image": "assets/icons/category-furniture-b.png"
+          "Link": "pages/jdihn",
+          "Name": "Anggota JDIHN",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
         },
         {
-            "Id": 1,
-            "Text": "BMN",
-            "Description": "Barang Milik Negara",
-            "URL": "#",
-            "Subject": "EODB",
-            "Image": "assets/icons/category-furniture-b.png"
+          "Link": "faq",
+          "Name": "FAQ",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
         },
         {
-            "Id": 1,
-            "Text": "SBSN",
-            "Description": "Surat Berharga SYariah Negara",
-            "URL": "#",
-            "Subject": "EODB",
-            "Image": "assets/icons/category-furniture-b.png"
-        },
-        {
-            "Id": 1,
-            "Text": "AEOI",
-            "Description": "Pertukaran Informasi Perpajakan",
-            "URL": "#",
-            "Subject": "EODB",
-            "Image": "assets/icons/category-furniture-b.png"
-        },
-        {
-            "Id": 1,
-            "Text": "APBN 2019",
-            "Description": "APBN 2019",
-            "URL": "#",
-            "Subject": "EODB",
-            "Image": "assets/icons/category-furniture-b.png"
-        },
-        {
-            "Id": 1,
-            "Text": "Dana Desa",
-            "Description": "Pengelolaan Dana Desa",
-            "URL": "#",
-            "Subject": "EODB",
-            "Image": "assets/icons/category-furniture-b.png"
-        },
-        {
-            "Id": 1,
-            "Text": "Tarif BLU",
-            "Description": "Tarif Badan Layanan Umum",
-            "URL": "#",
-            "Subject": "EODB",
-            "Image": "assets/icons/category-furniture-b.png"
+          "Link": "pages/disclaimer",
+          "Name": "Disclaimer",
+          "ParentId": -1,
+          "Type": "",
+          "Order": 0,
+          "PageId": 0,
+          "Id": 0
         }
-    ],
-    "defaultScope": [
-        {
-            "Id": 1,
-            "Keterangan": "Publik"
-        },
-        {
-            "Id": 1,
-            "Keterangan": "Kementerian Keuangan"
-        },
-        {
-            "Id": 1,
-            "Keterangan": "Internal Unit Eselon I"
-        }
-    ],
-    "defaultBentuk": [
-        {
-            "RefTypeId": 0,
-            "RefTypeNames": "Undang-Undang Dasar"
-        },
-        {
-            "RefTypeId": 1,
-            "RefTypeNames": "Undang-Undang"
-        },
-        {
-            "RefTypeId": 2,
-            "RefTypeNames": "Perpu"
-        },
-        {
-            "RefTypeId": 3,
-            "RefTypeNames": "Peraturan Pemerintah"
-        },
-        {
-            "RefTypeId": 4,
-            "RefTypeNames": "Peraturan Presiden"
-        },
-        {
-            "RefTypeId": 5,
-            "RefTypeNames": "Peraturan Menteri Keuangan"
-        },
-        {
-            "RefTypeId": 6,
-            "RefTypeNames": "Keputusan Menteri Keuangan"
-        },
-        {
-            "RefTypeId": 7,
-            "RefTypeNames": "Peraturan Unit Eselon I"
-        }
-    ],
-    "defaultMenu": [
-        {
-            "Link": "#",
-            "Name": "Dokumen Hukum",
-            "ParentId": -1,
-            "Type": "",
-            "Order": 0,
-            "PageId": 0,
-            "Id": 0,
-            "Items": [
-                {
-                    "Link": "peraturan",
-                    "Name": "Peraturan",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "putusan",
-                    "Name": "Putusan",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "monografi",
-                    "Name": "Monografi",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "artikel",
-                    "Name": "Artikel",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                }
-            ]
-        },
-        {
-            "Link": "#",
-            "Name": "Informasi Lain",
-            "ParentId": -1,
-            "Type": "",
-            "Order": 0,
-            "PageId": 0,
-            "Id": 0,
-            "Items": [
-                {
-                    "Link": "pages/simplifikasi",
-                    "Name": "Simplifikasi",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "kurs",
-                    "Name": "Kurs MK",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "pustaka",
-                    "Name": "Pustaka Hukum",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "berita",
-                    "Name": "Berita",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                }
-            ]
-        },
-        {
-            "Link": "#",
-            "Name": "Perihal",
-            "ParentId": -1,
-            "Type": "",
-            "Order": 0,
-            "PageId": 0,
-            "Id": 0,
-            "Items": [
-                {
-                    "Link": "pages/tentang",
-                    "Name": "Tentang JDIH",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "pages/jdihn",
-                    "Name": "Anggota JDIHN",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "faq",
-                    "Name": "FAQ",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                },
-                {
-                    "Link": "pages/disclaimer",
-                    "Name": "Disclaimer",
-                    "ParentId": -1,
-                    "Type": "",
-                    "Order": 0,
-                    "PageId": 0,
-                    "Id": 0
-                }
-            ]
-        }
-    ],
-    "examplePeraturan": [
-        {
-            "Id": 1,
-            "Nomor": "25/PMK.05/2020",
-            "Kode": "25/PMK.05/2020",
-            "RefTypeId": 1,
-            "Judul": "Tata Cara Pengalokasian, Penganggaran, Pencairan, dan Pertanggungjawaban Dana Kartu Prakerja",
-            "Tanggal": "21 Maret 2020"
-        },
-        {
-            "Id": 2,
-            "Nomor": "24/PMK.07/2020",
-            "Kode": "24/PMK.07/2020",
-            "RefTypeId": 1,
-            "Judul": "Perubahan atas Peraturan Menteri Keuangan Nomor 74/PMK.07 /2016 tentang Penyelenggaraan Sistem Informasi Keuangan Daerah",
-            "Tanggal": "21 Maret 2020"
-        },
-        {
-            "Id": 3,
-            "Nomor": "23/PMK.03/2020",
-            "Kode": "23/PMK.03/2020",
-            "RefTypeId": 3,
-            "Judul": "Insentif Pajak untuk Wajib Pajak Terdampak Wabah Virus Corona",
-            "Tanggal": "21 Maret 2020"
-        }
-    ],
-    "FAQExample": [
-        {
-            "FAQID": 10,
-            "Question": "Bagaimana jika file produk hukum yang saya inginkan tidak ada?",
-            "Answer": "Silahkan meninggalkan pesan/komentar melalui menu Hubungi Kami atau dapat menghubungi kami melalui kontak yang kami sediakan. Jangan lupa untuk menginformasikan alamat email Anda yang valid agar kami bisa menghubungi anda.",
-            "UserID": 16,
-            "ModifiedDate": "2018-07-09T00:00:00"
-        },
-        {
-            "FAQID": 11,
-            "Question": "Pelayanan apa saja yang disediakan JDIH Kementerian Keuangan untuk umum?",
-            "Answer": "JDIH memberikan pelayanan kepada masyarakat umum diataranya adalah penyediaan koleksi regulasi yang ada dapat dibaca dan/atau disalin dan buku-buku bertemakan hukum.",
-            "UserID": 16,
-            "ModifiedDate": "2018-07-09T00:00:00"
-        },
-        {
-            "FAQID": 13,
-            "Question": "Bagaimana cara menyampaikan saran-saran atau kritik untuk website ini?",
-            "Answer": "Anda dapat menyampaikan kritik atau saran untuk website JDIH Kementerian Keuangan melalui menu Hubungi Kami.",
-            "UserID": 16,
-            "ModifiedDate": "2018-07-09T00:00:00"
-        },
-        {
-            "FAQID": 14,
-            "Question": "Mengapa Keputusan Menteri Keuangan tidak lengkap di website ini?",
-            "Answer": "Sebagian besar Keputusan Menteri Keuangan merupakan produk hukum yang bersifat menetapkan (beschikking) dan hanya disampaikan kepada para penerima salinan yang tercantum dalam Keputusan Menteri Keuangan tersebut",
-            "UserID": 16,
-            "ModifiedDate": "2018-07-09T00:00:00"
-        },
-        {
-            "FAQID": 7,
-            "Question": "Bagaimana mencari produk hukum yang saya inginkan?",
-            "Answer": "Untuk mencari produk hukum yang Anda inginkan, Anda dapat measukkan kata kunci seperti judul atau nomor atau tahun peraturan yang anda ketahui pada tab pencarian, kemudian klik tombol cari.",
-            "UserID": 16,
-            "ModifiedDate": "2018-07-09T00:00:00"
-        },
-        {
-            "FAQID": 8,
-            "Question": "Bagaimana cara mendownload file produk hukum?",
-            "Answer": "Untuk mengunduh peraturan, Anda dapat melakukanya melalui link &#8216;Unduh&#8217; yang terletak dibawah deskripsi peraturan",
-            "UserID": 16,
-            "ModifiedDate": "2018-07-09T00:00:00"
-        },
-        {
-            "FAQID": 15,
-            "Question": "Apakah yang dimaksud dengan BN, LN, TLN dan LL pada Katalog Peraturan?",
-            "Answer": "Kode-kode tersebut munjukan kode dari sumber peraturan tersebut, BN adalah Berita Negara, LN adalah Lembaran Negara, TLN adalah Tambahan Lembaran Negara, dan LL adalah Lembaran Lepas.",
-            "UserID": 16,
-            "ModifiedDate": "2018-07-09T00:00:00"
-        },
-        {
-            "FAQID": 16,
-            "Question": "Apakah konten yang tersedia di website ini sama dengan yang ada di aplikasi JDIH Mobile?",
-            "Answer": "Ya,konten yang tersedia di website ini sama dengan yang ada di aplikasi JDIH Mobile.",
-            "UserID": 15,
-            "ModifiedDate": "2019-03-13T00:00:00"
-        },
-        {
-            "FAQID": 17,
-            "Question": "Mengapa saya tidak menemukan tombol untuk mengundah Abstrak Peraturan Perundang-Undangan?",
-            "Answer": "Kemungkinan besar berkas abstrak peraturan perundang-undangan tersebut belum diunggah. Silahkan menghubungi kami terkait hal tersebut.",
-            "UserID": 15,
-            "ModifiedDate": "2019-03-13T00:00:00"
-        }
-    ]
-
+      ]
+    }
+  ],
+  "examplePeraturan": [
+    {
+      "Id": 1,
+      "Nomor": "25/PMK.05/2020",
+      "Kode": "25/PMK.05/2020",
+      "RefTypeId": 1,
+      "Judul": "Tata Cara Pengalokasian, Penganggaran, Pencairan, dan Pertanggungjawaban Dana Kartu Prakerja",
+      "Tanggal": "21 Maret 2020"
+    },
+    {
+      "Id": 2,
+      "Nomor": "24/PMK.07/2020",
+      "Kode": "24/PMK.07/2020",
+      "RefTypeId": 1,
+      "Judul": "Perubahan atas Peraturan Menteri Keuangan Nomor 74/PMK.07 /2016 tentang Penyelenggaraan Sistem Informasi Keuangan Daerah",
+      "Tanggal": "21 Maret 2020"
+    },
+    {
+      "Id": 3,
+      "Nomor": "23/PMK.03/2020",
+      "Kode": "23/PMK.03/2020",
+      "RefTypeId": 3,
+      "Judul": "Insentif Pajak untuk Wajib Pajak Terdampak Wabah Virus Corona",
+      "Tanggal": "21 Maret 2020"
+    }
+  ],
+  "FAQExample": [
+    {
+      "FAQID": 10,
+      "Question": "Bagaimana jika file produk hukum yang saya inginkan tidak ada?",
+      "Answer": "Silahkan meninggalkan pesan/komentar melalui menu Hubungi Kami atau dapat menghubungi kami melalui kontak yang kami sediakan. Jangan lupa untuk menginformasikan alamat email Anda yang valid agar kami bisa menghubungi anda.",
+      "UserID": 16,
+      "ModifiedDate": "2018-07-09T00:00:00"
+    },
+    {
+      "FAQID": 11,
+      "Question": "Pelayanan apa saja yang disediakan JDIH Kementerian Keuangan untuk umum?",
+      "Answer": "JDIH memberikan pelayanan kepada masyarakat umum diataranya adalah penyediaan koleksi regulasi yang ada dapat dibaca dan/atau disalin dan buku-buku bertemakan hukum.",
+      "UserID": 16,
+      "ModifiedDate": "2018-07-09T00:00:00"
+    },
+    {
+      "FAQID": 13,
+      "Question": "Bagaimana cara menyampaikan saran-saran atau kritik untuk website ini?",
+      "Answer": "Anda dapat menyampaikan kritik atau saran untuk website JDIH Kementerian Keuangan melalui menu Hubungi Kami.",
+      "UserID": 16,
+      "ModifiedDate": "2018-07-09T00:00:00"
+    },
+    {
+      "FAQID": 14,
+      "Question": "Mengapa Keputusan Menteri Keuangan tidak lengkap di website ini?",
+      "Answer": "Sebagian besar Keputusan Menteri Keuangan merupakan produk hukum yang bersifat menetapkan (beschikking) dan hanya disampaikan kepada para penerima salinan yang tercantum dalam Keputusan Menteri Keuangan tersebut",
+      "UserID": 16,
+      "ModifiedDate": "2018-07-09T00:00:00"
+    },
+    {
+      "FAQID": 7,
+      "Question": "Bagaimana mencari produk hukum yang saya inginkan?",
+      "Answer": "Untuk mencari produk hukum yang Anda inginkan, Anda dapat measukkan kata kunci seperti judul atau nomor atau tahun peraturan yang anda ketahui pada tab pencarian, kemudian klik tombol cari.",
+      "UserID": 16,
+      "ModifiedDate": "2018-07-09T00:00:00"
+    },
+    {
+      "FAQID": 8,
+      "Question": "Bagaimana cara mendownload file produk hukum?",
+      "Answer": "Untuk mengunduh peraturan, Anda dapat melakukanya melalui link &#8216;Unduh&#8217; yang terletak dibawah deskripsi peraturan",
+      "UserID": 16,
+      "ModifiedDate": "2018-07-09T00:00:00"
+    },
+    {
+      "FAQID": 15,
+      "Question": "Apakah yang dimaksud dengan BN, LN, TLN dan LL pada Katalog Peraturan?",
+      "Answer": "Kode-kode tersebut munjukan kode dari sumber peraturan tersebut, BN adalah Berita Negara, LN adalah Lembaran Negara, TLN adalah Tambahan Lembaran Negara, dan LL adalah Lembaran Lepas.",
+      "UserID": 16,
+      "ModifiedDate": "2018-07-09T00:00:00"
+    },
+    {
+      "FAQID": 16,
+      "Question": "Apakah konten yang tersedia di website ini sama dengan yang ada di aplikasi JDIH Mobile?",
+      "Answer": "Ya,konten yang tersedia di website ini sama dengan yang ada di aplikasi JDIH Mobile.",
+      "UserID": 15,
+      "ModifiedDate": "2019-03-13T00:00:00"
+    },
+    {
+      "FAQID": 17,
+      "Question": "Mengapa saya tidak menemukan tombol untuk mengundah Abstrak Peraturan Perundang-Undangan?",
+      "Answer": "Kemungkinan besar berkas abstrak peraturan perundang-undangan tersebut belum diunggah. Silahkan menghubungi kami terkait hal tersebut.",
+      "UserID": 15,
+      "ModifiedDate": "2019-03-13T00:00:00"
+    }
+  ]
 }

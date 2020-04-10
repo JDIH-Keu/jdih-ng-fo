@@ -9,6 +9,11 @@
         <input name="Isi" type="text" #isi="ngModel" ngModel class="form-control" id="what" placeholder="Fulltext Search">
     </div>
     <div class="form-group">
+        <label for="category" class="col-form-label">Subyek</label>
+        <ng-select name="Subyek" [minTermLength]="2" [addTagText]="'Gunakan'" (search)="searchSubyek($event.term)" #subyek="ngModel" ngModel [addTag]="true" [items]="subjectItems" bindLabel="RefSubjectNames" bindValue="RefSubjectId" placeholder="Subyek Peraturan">
+        </ng-select>
+    </div>
+    <div class="form-group">
         <label for="input-location" class="col-form-label">Nomor</label>
         <input name="Nomor" type="text" #nomor="ngModel" ngModel class="form-control" id="input-location" placeholder="Nomor">
 

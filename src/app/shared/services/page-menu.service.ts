@@ -13,14 +13,10 @@ export class PageMenuService extends BaseCrudService {
 
     constructor(public http: HttpClient) {
         super();
+        this.urlApi = 'api/PageMenu';
     }
 
     getDefault(): Observable<PageMenu[]> {
         return of(dummyData.defaultMenu);
-    }
-
-    getAll(): Observable<PageMenu[]> {
-        const urlApi = 'api/PageMenu';
-        return this.http.get<PageMenu[]>(urlApi);
     }
 }

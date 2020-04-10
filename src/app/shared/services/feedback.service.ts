@@ -13,14 +13,11 @@ export class FeedbackService extends BaseCrudService {
 
     constructor(public http: HttpClient) {
         super();
+        this.urlApi = 'api/Feedback';
     }
 
     getDefault(): Observable<Feedback[]> {
         return of(dummyData.FeedbackExample);
     }
 
-    getAll(): Observable<Feedback[]> {
-        const urlApi = 'api/Feedback';
-        return this.http.get<any[]>(urlApi);
-    }
 }

@@ -15,7 +15,7 @@ import { MainNavigationComponent } from './components/main-navigation/main-navig
 import { SecondaryNavigationComponent } from './components/secondary-navigation/secondary-navigation.component';
 import { BigSearchComponent } from './components/big-search/big-search.component';
 import { FilterPipe } from './pipes/filter.pipe';
-import { PaginationComponent } from './pagination/pagination.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { FloatButtonComponent } from './components/float-button/float-button.component';
 import { StatsComponent } from './components/stats/stats.component';

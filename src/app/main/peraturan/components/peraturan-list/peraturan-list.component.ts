@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Peraturan } from '../../../../shared/models/main/catalogs';
 
+
 @Component({
   selector: 'app-peraturan-list',
   templateUrl: './peraturan-list.component.html',
@@ -73,5 +74,9 @@ export class PeraturanListComponent implements OnInit {
       }
     ];
   }
+
+  onChangePage($event) {
+    console.log($event);
+}
 
 }

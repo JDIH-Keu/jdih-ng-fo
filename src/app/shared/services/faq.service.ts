@@ -13,14 +13,11 @@ export class FAQService extends BaseCrudService {
 
     constructor(public http: HttpClient) {
         super();
+        this.urlApi = 'api/FAQ';
     }
 
     getDefault(): Observable<any[]> {
         return of(dummyData.FAQExample);
     }
 
-    getAll(): Observable<any[]> {
-        const urlApi = 'api/FAQ';
-        return this.http.get<any[]>(urlApi);
-    }
 }

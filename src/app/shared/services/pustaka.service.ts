@@ -13,14 +13,11 @@ export class PustakaService extends BaseCrudService {
 
     constructor(public http: HttpClient) {
         super();
+        this.urlApi = 'api/Pustaka';
     }
 
     getDefault(): Observable<Pustaka[]> {
         return of(sampleData.PerpustakaanData);
     }
 
-    getAll(): Observable<Pustaka[]> {
-        const urlApi = 'api/Pustaka';
-        return this.http.get<Pustaka[]>(urlApi);
-    }
 }

@@ -79,8 +79,6 @@ export class TematikPageComponent implements OnInit {
     data.forEach(element => {
       const name = this.BentukPeraturanList.find(bentuk => bentuk.RefTypeId === element[field]);
 
-      console.log(name);
-
       if (!group[name.RefTypeNames]) {
         group[name.RefTypeNames] = { count: 1, Id: element[field] };
       } else {
