@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-monografi',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonografiComponent implements OnInit {
 
-  constructor() { }
+  showModal = false;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  handleFloatClick() {
+    this.showModal = true;
+  }
+
+  search($event){
+    this.router.navigate(['/monografi/list'], {
+      queryParams: $event,
+      fragment: 'anchor'
+    });
+
+    this.showModal = false;
+  }
 }

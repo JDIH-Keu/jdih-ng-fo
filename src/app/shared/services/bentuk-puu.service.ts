@@ -13,7 +13,7 @@ export class BentukPUUService extends BaseCrudService {
 
     constructor(public http: HttpClient) {
         super();
-        this.urlApi = 'api/PageMenu';
+        this.urlApi = 'api/bentukpuu';
     }
 
     getDefault(): Observable<RefBentuk[]> {

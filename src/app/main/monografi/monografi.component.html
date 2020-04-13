@@ -1,1 +1,23 @@
-<p>monografi works!</p>
+<section class="block">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row">
+            <div class="col-md-9 col-sm-12">
+                <router-outlet *ngIf="!showModal"></router-outlet>
+                <div *ngIf="showModal">
+                    <app-monografi-filter [showCancelButton]="true" (searchEvent)="search($event)" (cancelEvent)="showModal=false"></app-monografi-filter>
+                </div>
+            </div>
+            <div class="col-md-3 d-md-block d-sm-none d-none" *ngIf="!showModal">
+                <aside class="sidebar">
+                    <section>
+                        <app-monografi-filter [showCancelButton]="false" (searchEvent)="search($event)"></app-monografi-filter>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="d-none d-block d-sm-block d-md-none" *ngIf="!showModal">
+    <app-float-button (buttonClicked)="handleFloatClick()"></app-float-button>
+</div>

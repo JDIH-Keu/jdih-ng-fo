@@ -1,24 +1,24 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild } from '@angular/core';
-import { BentukPeradilanService } from '../../../../shared/services/bentuk-peradilan.service';
-import { RefPeradilan } from '../../../../shared/models/main/references';
+import { BidangHukumService } from '../../../../shared/services/bidang-hukum.services';
+import { RefHukum } from '../../../../shared/models/main/references';
 import { ActivatedRoute } from '@angular/router';
 import { NgForm } from '@angular/forms';
 
 
 @Component({
-  selector: 'app-putusan-filter',
-  templateUrl: './putusan-filter.component.html',
-  styleUrls: ['./putusan-filter.component.scss']
+  selector: 'app-artikel-filter',
+  templateUrl: './artikel-filter.component.html',
+  styleUrls: ['./artikel-filter.component.scss']
 })
-export class PutusanFilterComponent implements OnInit {
-  BentukPeradilanItems: RefPeradilan[];
+export class ArtikelFilterComponent implements OnInit {
+  BidangHukumItems: RefHukum[];
 
   @Input() showCancelButton = false;
   @Output() searchEvent = new EventEmitter();
   @Output() cancelEvent = new EventEmitter();
   @ViewChild('filterForm', { static: true }) filterForm: NgForm;
 
-  constructor(private bentukPeradilanService: BentukPeradilanService,
+  constructor(private bidangHukumService: BidangHukumService,
               private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -30,12 +30,12 @@ export class PutusanFilterComponent implements OnInit {
       }, 1000);
     });
 
-    this.bentukPeradilanService.getAll().subscribe(result => {
-      this.BentukPeradilanItems = result;
+    this.bidangHukumService.getAll().subscribe(result => {
+      this.BidangHukumItems = result;
     },
       err => {
-        this.bentukPeradilanService.getDefault().subscribe(result => {
-          this.BentukPeradilanItems = result;
+        this.bidangHukumService.getDefault().subscribe(result => {
+          this.BidangHukumItems = result;
         });
       }
     );

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BaseCrudService } from '../../../shared/services/base-crud.service';
+import { BaseCrudService } from './base-crud.service';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class ArtikelHukumService extends BaseCrudService {
 
   constructor(public http: HttpClient, public router: Router) {
-    super()
+    super();
     this.urlApi = 'api/AppArtikels';
   }
 

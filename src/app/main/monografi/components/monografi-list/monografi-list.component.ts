@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Putusan } from '../../../../shared/models/main/catalogs';
+import { Monografi } from '../../../../shared/models/main/catalogs';
 
 @Component({
-  selector: 'app-putusan-list',
-  templateUrl: './putusan-list.component.html',
-  styleUrls: ['./putusan-list.component.scss']
+  selector: 'app-monografi-list',
+  templateUrl: './monografi-list.component.html',
+  styleUrls: ['./monografi-list.component.scss']
 })
-export class PutusanListComponent implements OnInit {
-  PutusanList: Putusan[];
+export class MonografiListComponent implements OnInit {
+  MonografiList: Monografi[];
   currentQueryParams;
   initialPage = 1;
   pageSize = 5;
@@ -28,32 +28,27 @@ export class PutusanListComponent implements OnInit {
   }
 
   getData(params) {
-    this.PutusanList = [{
-      PutusanPengadilanId: '1',
-      Judul: 'Putusan Pengadilan Didaftarkan oleh Pemerintah Daerah',
-      Nomor: '166/PXX/2019',
-      Tahun: '2019',
-      FullTextPDF: ''
+    this.MonografiList = [{
+      MonografiHukumId: '1',
+      Judul: 'Monografi Pengadilan Didaftarkan oleh Pemerintah Daerah',
+      NomorPanggil: '166/PXX/2019',
+      TempatTerbit: 'AA',
+      ISBN: 'AA',
+      Penerbit: 'AA'
     }];
   }
 
-  generateButtonDetail(item?: Putusan) {
+  generateButtonDetail(item?: Monografi) {
     return {
       Text: 'Detail',
       Icon: 'fa fa-list',
-      Link: '/putusan/detail'
+      Link: '/monografi/detail'
     };
   }
 
-  generateButton(item: Putusan) {
+  generateButton(item: Monografi) {
     if (!item) { return []; }
-    return [
-      {
-        Text: 'Fulltext',
-        Link: item.FullTextPDF,
-        Icon: 'fa fa-file-pdf-o',
-      }
-    ];
+    return [];
   }
 
   onChangePage($event) {

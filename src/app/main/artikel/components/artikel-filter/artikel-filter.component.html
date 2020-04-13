@@ -1,0 +1,21 @@
+<h2>Pencarian</h2>
+<form #filterForm="ngForm" class="sidebar-form form">
+    <div class="form-group">
+        <label for="what" class="col-form-label">Judul</label>
+        <input name="Judul" type="text" #judul="ngModel" ngModel class="form-control" id="what" placeholder="Judul">
+    </div>
+    <div class="form-group">
+        <label for="input-location" class="col-form-label">Nomor Panggil</label>
+        <input name="Nomor" type="text" #nomor="ngModel" ngModel class="form-control" id="input-location" placeholder="Nomor">
+
+    </div>
+    <div class="form-group">
+        <label for="input-location" class="col-form-label">Penerbit</label>
+        <input name="Tahun" type="text" #tahun="ngModel" ngModel class="form-control" id="input-location" placeholder="Tahun">
+    </div>
+    <div class="btn-group center" style="width:100%" role="group" aria-label="Button Search Group">
+        <button type="button" (click)="handleSearch(filterForm)" class="btn btn-primary width-100">Cari</button>
+        <button type="button" (click)="reset(filterForm)" class="btn btn-warning width-100">Reset</button>
+        <button type="button" *ngIf="showCancelButton" (click)="handleCancel($event)" class="btn btn-info width-100">Batal</button>
+    </div>
+</form>

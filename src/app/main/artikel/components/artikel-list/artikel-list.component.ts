@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Putusan } from '../../../../shared/models/main/catalogs';
+import { Artikel } from '../../../../shared/models/main/catalogs';
 
 @Component({
-  selector: 'app-putusan-list',
-  templateUrl: './putusan-list.component.html',
-  styleUrls: ['./putusan-list.component.scss']
+  selector: 'app-artikel-list',
+  templateUrl: './artikel-list.component.html',
+  styleUrls: ['./artikel-list.component.scss']
 })
-export class PutusanListComponent implements OnInit {
-  PutusanList: Putusan[];
+export class ArtikelListComponent implements OnInit {
+  ArtikelList: Artikel[];
   currentQueryParams;
   initialPage = 1;
   pageSize = 5;
@@ -28,32 +28,27 @@ export class PutusanListComponent implements OnInit {
   }
 
   getData(params) {
-    this.PutusanList = [{
-      PutusanPengadilanId: '1',
-      Judul: 'Putusan Pengadilan Didaftarkan oleh Pemerintah Daerah',
-      Nomor: '166/PXX/2019',
-      Tahun: '2019',
-      FullTextPDF: ''
+    this.ArtikelList = [{
+      ArtikelId: '1',
+      Judul: 'Artikel Pengadilan Didaftarkan oleh Pemerintah Daerah',
+      EdisiCetakan: '166/PXX/2019',
+      TempatTerbit: 'AA',
+      Sumber: 'AA',
+      Penerbit: 'AA'
     }];
   }
 
-  generateButtonDetail(item?: Putusan) {
+  generateButtonDetail(item?: Artikel) {
     return {
       Text: 'Detail',
       Icon: 'fa fa-list',
-      Link: '/putusan/detail'
+      Link: '/artikel/detail'
     };
   }
 
-  generateButton(item: Putusan) {
+  generateButton(item: Artikel) {
     if (!item) { return []; }
-    return [
-      {
-        Text: 'Fulltext',
-        Link: item.FullTextPDF,
-        Icon: 'fa fa-file-pdf-o',
-      }
-    ];
+    return [];
   }
 
   onChangePage($event) {
