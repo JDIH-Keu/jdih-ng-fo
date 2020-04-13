@@ -7,5 +7,6 @@
 </div>
 
 <div class="col-md-12 center">
-    <app-pagination [itemsLength]="20" [pageSize]="5" [maxPages]="3" (changePage)="onChangePage($event)"></app-pagination>
+    <app-pagination [initialPage]="initialPage" [route]="'/peraturan/list'" [routeParams]="currentQueryParams"
+        [itemsLength]="PeraturanList.length" [pageSize]="5" [maxPages]="5" (changePage)="onChangePage($event)"></app-pagination>
 </div>

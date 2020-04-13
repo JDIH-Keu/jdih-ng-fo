@@ -5,15 +5,6 @@
         <input name="Judul" type="text" #judul="ngModel" ngModel class="form-control" id="what" placeholder="Judul">
     </div>
     <div class="form-group">
-        <label for="what" class="col-form-label">Isi</label>
-        <input name="Isi" type="text" #isi="ngModel" ngModel class="form-control" id="what" placeholder="Fulltext Search">
-    </div>
-    <div class="form-group">
-        <label for="category" class="col-form-label">Subyek</label>
-        <ng-select name="Subyek" [minTermLength]="2" [addTagText]="'Gunakan'" (search)="searchSubyek($event.term)" #subyek="ngModel" ngModel [addTag]="true" [items]="subjectItems" bindLabel="RefSubjectNames" bindValue="RefSubjectNames" placeholder="Subyek Peraturan">
-        </ng-select>
-    </div>
-    <div class="form-group">
         <label for="input-location" class="col-form-label">Nomor</label>
         <input name="Nomor" type="text" #nomor="ngModel" ngModel class="form-control" id="input-location" placeholder="Nomor">
 
@@ -24,19 +15,7 @@
     </div>
     <div class="form-group">
         <label for="category" class="col-form-label">Bentuk</label>
-        <ng-select name="Bentuk" #tahun="ngModel" ngModel [items]="BentukPUUItems" bindLabel="RefTypeNames" bindValue="RefTypeId" placeholder="Bentuk Peraturan">
-        </ng-select>
-    </div>
-
-    <div class="form-group">
-        <label for="category" class="col-form-label">Jangkauan Publikasi</label>
-        <ng-select name="Scope" #scope="ngModel" ngModel [items]="ScopeItems" bindLabel="Keterangan" bindValue="Id" placeholder="Jangkauan Peraturan">
-        </ng-select>
-    </div>
-
-    <div class="form-group">
-        <label for="category" class="col-form-label">Status</label>
-        <ng-select name="Status" #status="ngModel" ngModel [items]="StatusItems" bindLabel="Keterangan" bindValue="Id" placeholder="Status Peraturan">
+        <ng-select name="Bentuk" #tahun="ngModel" ngModel [items]="BentukPeradilanItems" bindLabel="NamaPeradilan" bindValue="JenisPeradilanId" placeholder="Bentuk Putusan">
         </ng-select>
     </div>
     <div class="btn-group center" style="width:100%" role="group" aria-label="Button Search Group">

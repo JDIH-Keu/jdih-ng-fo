@@ -22,7 +22,7 @@ export class PeraturanFilterComponent implements OnInit {
   @Input() showCancelButton = false;
   @Output() searchEvent = new EventEmitter();
   @Output() cancelEvent = new EventEmitter();
-  @ViewChild('filterForm', { static: true })filterForm: NgForm;
+  @ViewChild('filterForm', { static: true }) filterForm: NgForm;
 
   constructor(private peraturanService: PeraturanService,
               private bentukPUUService: BentukPUUService,
@@ -32,8 +32,10 @@ export class PeraturanFilterComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(data => {
+      const {limit, offset, ...params} = data;
       setTimeout(() => {
-      this.filterForm.setValue(Object.assign(this.filterForm.value, data));
+        this.filterForm.setValue(
+          Object.assign(this.filterForm.value, params));
       }, 1000);
     });
 
@@ -68,10 +70,10 @@ export class PeraturanFilterComponent implements OnInit {
     );
   }
 
-  searchSubyek(text:string) {
+  searchSubyek(text: string) {
     if (text.length !== 2) { return; }
     this.subyekService.getDefault(text).subscribe(
-      data => {this.subjectItems = data; }
+      data => { this.subjectItems = data; }
     );
   }
 
