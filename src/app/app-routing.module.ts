@@ -39,8 +39,8 @@ const routes: Routes = [
     loadChildren: () => import('./main/berita/berita.module').then(m => m.BeritaModule)
   },
   {
-    path: 'pages',
-    data: { title: 'Halaman' },
+    path: 'pages/:pagename',
+    data: { title: '' },
     loadChildren: () => import('./main/pages/pages.module').then(m => m.PagesModule)
   },
   {
