@@ -4,7 +4,6 @@
             <div class="col-md-12 col-sm-12">
                 <h2>Kurs Menteri Keuangan</h2>
                 <p *ngIf="tableString">Data Kurs Menteri Keuangan berdasarkan KMK Nomor <a [href]="linkKMK">{{ nomorKMK }}</a>. Selengapnya silahkan kunjungi laman <a href="https://fiskal.kemenkeu.go.id/"> fiskal.kemenkeu.go.id</a></p>
-                <div class="loader" *ngIf="!tableString"></div>
                 <div [innerHtml]="tableString">
                 </div>
                 <p *ngIf="tableString">* Note : untuk JPY adalah nilai Rupiah per 100 Yen</p>

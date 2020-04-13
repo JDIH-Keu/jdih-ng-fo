@@ -24,6 +24,7 @@
     "jssoup": "0.0.11",
     "jw-angular-pagination": "^1.1.0",
     "jw-paginate": "^1.0.4",
+    "ng-http-loader": "^7.0.0",
     "rxjs": "~6.5.4",
     "ts-md5": "^1.2.7",
     "tslib": "^1.10.0",
